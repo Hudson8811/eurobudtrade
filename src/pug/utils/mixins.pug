@@ -11,3 +11,9 @@ mixin footer-link(title)
 mixin footer-heading(title)
   li.footer-row-item
     a.footer-row-heading(href="#")= title
+
+mixin sl-banner(title)
+  a.index_banner-item(href="#")
+    svg
+        use(xlink:href='images/svg/symbol/sprite.svg#build')
+    span= title
