@@ -1,0 +1,19 @@
+.index_banner {
+  position: relative;
+  box-sizing: border-box;
+  padding: 97px 0 205px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 378px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+}

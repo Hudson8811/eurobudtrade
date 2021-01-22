@@ -1,11 +1,21 @@
 header.header
-    .container
+    .container.header-container
         a.header-logo(href="#")
             img(src="images/header/logo.png", alt="")
+
         ul.header-menu
             li.header-menu-item
                 a.header-menu-link(href="#") Компания
-            
+
+                ul.header-sub_menu
+                    li.header-sub_menu-item
+                        a.header-sub_menu-link(href="#") Монтаж
+                        +menu-content('Сиситемы кондиционирования','Сиситемы вентеляции','Системы отопления')
+
+                    li.header-sub_menu-item
+                        a.header-sub_menu-link(href="#") Проектирование
+                        +menu-content('Предпроектная документация','Сиситемы кондиционирования','Сиситемы вентеляции','Системы отопления')
+
             li.header-menu-item
                 a.header-menu-link(href="#") Услуги
             
@@ -22,3 +32,9 @@ header.header
                 a.header-lang(href="#")
                     svg
                         use(xlink:href='images/svg/symbol/sprite.svg#lang')
+                    span Укр
+
+        a.header-phone(href="tel:+380443642970")
+            svg
+                use(xlink:href='images/svg/symbol/sprite.svg#phone')
+            span +38 (044) 364 29 70

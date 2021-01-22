@@ -1,0 +1,13 @@
+mixin menu-content(...items)
+  ul.header-sub_menu_content
+    each item in items
+      li.header-sub_menu_content-item
+        a.header-sub_menu_content-link(href="#")= item
+
+mixin footer-link(title)
+  li.footer-row-item
+    a.footer-row-link(href="#")= title
+
+mixin footer-heading(title)
+  li.footer-row-item
+    a.footer-row-heading(href="#")= title
