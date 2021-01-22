@@ -4,8 +4,8 @@ module.exports = function () {
     $.gulp.watch('./src/assets/styles/**/*.scss', $.gulp.series('styles:dev'));
     $.gulp.watch(
       [
-        './src/assets/images/general/**/*.{png,jpg,gif}',
-        './src/assets/images/content/**/*.{png,jpg,gif}',
+        './src/assets/images/**/*.{png,jpg,gif}',
+        './src/assets/images/**/*.{png,jpg,gif}',
       ],
       $.gulp.series('img:dev'),
     );
