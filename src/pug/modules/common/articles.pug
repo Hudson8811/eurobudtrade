@@ -1,0 +1,23 @@
+.articles
+    .container.articles-container
+        +s_title('полезные', ' статьи')
+
+    .container
+        .articles-slider
+            div
+                .articles-item(style="background-image: url(images/articles/image1.jpg);")
+                    a.articles-text(href="#")
+                        span 2 декабря 2020
+                        p Правильная организация вентиляции в складском помещении
+            div
+                .articles-item(style="background-image: url(images/articles/image2.jpg);")
+                    a.articles-text(href="#")
+                        span 2 декабря 2020
+                        p Организация системы вентиляции в санузле
+            div
+                .articles-item(style="background-image: url(images/articles/image3.jpg);")
+                    a.articles-text(href="#")
+                        span 2 декабря 2020
+                        p Как выбрать подрядчика для монтажа инженерных систем
+                        
+        +arrow_btn('все статьи')

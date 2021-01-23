@@ -54,3 +54,16 @@ mixin ob-item(img, title)
         a.objects-btn(href="#")
             span Рассчитать
             +svg('#objects-svg')
+
+mixin fact(icon, title, desc)
+  .facts-item
+    .facts-icon= icon
+    .facts-text
+      span= title
+      p= desc
+
+mixin arrow_btn(title)
+  a.more_btn(href="#")
+    span= title
+    svg
+      use(xlink:href='images/svg/symbol/sprite.svg#more_btn')

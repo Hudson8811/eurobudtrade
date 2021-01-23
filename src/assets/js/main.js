@@ -31,4 +31,19 @@ $(document).ready(function () {
         appendArrows: $('.project-tools'),
         appendDots: $('.project-tools'),
       });
+
+      $(".facts-slider").slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        rows: 2,
+        arrows: false,
+        dots: false,
+      });
+
+      $(".articles-slider").slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false,
+        dots: false,
+      });
 });
