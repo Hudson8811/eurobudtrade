@@ -1,6 +1,7 @@
 ul,
 ol,
-p {
+p,
+h2 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ p {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #fff;
 }
 
 .container {
@@ -19,4 +21,60 @@ body {
   width: 98%;
   max-width: 1240px;
   margin: 0 auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.more_btn {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #426cff;
+
+  span {
+    display: block;
+    padding-right: 8px;
+  }
+
+  svg {
+    display: block;
+    height: 14px;
+    width: 26px;
+  }
+}
+
+.section_title {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 96px;
+    height: 2px;
+    margin-left: 121px;
+    background: #426cff;
+  }
+  span {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #262c36;
+
+    span {
+      color: #426cff;
+    }
+  }
 }

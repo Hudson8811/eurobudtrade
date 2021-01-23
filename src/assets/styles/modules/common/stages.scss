@@ -1,0 +1,128 @@
+.stages {
+  position: relative;
+  box-sizing: border-box;
+  padding: 60px 0;
+
+  .container {
+    text-align: right;
+  }
+
+  &-catalog {
+    max-width: 1131px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: -46px;
+  }
+
+  &-item {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    padding: 46px 0;
+    margin-bottom: 16px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      height: 1px;
+      width: calc(100% - 89px);
+      background: #d4d7de;
+    }
+
+    &:nth-child(2n + 1) {
+      padding-right: 89px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        bottom: -6px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: center / cover url(../images/stages/after.png) no-repeat;
+      }
+    }
+
+    &:nth-child(2n) {
+      padding-left: 89px;
+
+      &:before {
+        left: 89px;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 1px;
+        height: calc(100% - 25px);
+        background: #d4d7de;
+      }
+    }
+
+    &:nth-last-child(2),
+    &:nth-last-child(1) {
+      &:before {
+        display: none;
+      }
+    }
+
+    &:nth-last-child(2) {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &-icon {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 83px;
+    height: 83px;
+    padding: 14px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #3e5dc8;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-text {
+    display: block;
+    padding-left: 32px;
+
+    span {
+      display: block;
+      margin-bottom: 14px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 135%;
+      color: #262c36;
+    }
+
+    p {
+      display: block;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 150%;
+      color: #6b7285;
+    }
+  }
+}

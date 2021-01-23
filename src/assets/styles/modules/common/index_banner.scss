@@ -36,7 +36,7 @@
     text-decoration: none;
     transition: background 0.2s linear;
 
-    &:after {
+    &::before {
       content: '';
       position: absolute;
       right: 0;
@@ -55,6 +55,10 @@
 
     &:hover {
       background: #6684ec;
+
+      &:before {
+        opacity: 0;
+      }
 
       span {
         color: #ffffff;

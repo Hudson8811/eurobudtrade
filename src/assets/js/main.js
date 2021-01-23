@@ -19,4 +19,16 @@ $(document).ready(function () {
           }
         ]
       });
+
+      $(".project-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        vertical: true,
+        autoplay:false,
+        verticalSwiping: true,
+        appendArrows: $('.project-tools'),
+        appendDots: $('.project-tools'),
+      });
 });

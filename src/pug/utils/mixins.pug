@@ -17,3 +17,40 @@ mixin sl-banner(title)
     svg
         use(xlink:href='images/svg/symbol/sprite.svg#build')
     span= title
+
+mixin desc(number, desc)
+  .a_company-item
+    .a_company-number= number
+    .a_company-desc=desc
+
+mixin m_btn
+  a.more_btn(href="#")
+    span подробнее
+    svg
+      use(xlink:href='images/svg/symbol/sprite.svg#more_btn')
+
+mixin s_title(black, blue)
+  .section_title
+    span=black 
+      span=blue
+
+mixin stages-item(title, desc, svg)
+  .stages-item
+    .stages-icon
+      svg
+        use(xlink:href=`images/svg/symbol/sprite.svg${svg}`)
+    .stages-text
+      span=title
+      p=desc
+
+mixin svg(svg)
+  svg
+    use(xlink:href=`images/svg/symbol/sprite.svg${svg}`)
+
+mixin ob-item(img, title)
+  .objects-item(style=`background-image: url(images/objects/${img});`)
+    .objects-text
+        span.objects-title= title
+        a.objects-btn(href="#")
+            span Рассчитать
+            +svg('#objects-svg')
