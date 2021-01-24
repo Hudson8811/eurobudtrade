@@ -67,3 +67,10 @@ mixin arrow_btn(title)
     span= title
     svg
       use(xlink:href='images/svg/symbol/sprite.svg#more_btn')
+
+mixin radio-input(name, title)
+  label.radio-input
+    input(type="radio", name=`${name}`)
+    b
+    i
+    span= title

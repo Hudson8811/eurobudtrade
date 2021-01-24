@@ -1,0 +1,45 @@
+#thx {
+  padding: 0;
+}
+.thx {
+  position: relative;
+  box-sizing: border-box;
+  width: 535px;
+  padding: 60px 30px 80px;
+  background: #688aff;
+
+  &-title {
+    display: block;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 135%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &-desc {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 135%;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  a {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    display: block;
+    width: 22px;
+    height: 22px;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
