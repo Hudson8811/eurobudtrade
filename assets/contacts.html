@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<a class="more_btn" href="#"><span></span>
+  <svg>
+    <use xlink:href="images/svg/symbol/sprite.svg#more_btn"></use>
+  </svg></a><!DOCTYPE html>
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
@@ -6,48 +9,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content=""><link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
   <body class="main_page">
     <script>
       let marketsConfig = {
-          defaults: {
-              market: "USD",
-              // Market table field by which data will be sorted by default
-              sorting: "volume", // pair, coin, price, spread, change, high, low, volume
-              tab: "market", // market, group - generates TABs automatically for markets from a pair or set manually in config.group.markets
-              mode: "widget", // widget, page
-              exchange: "https://www.b2bx.exchange/advanced/",
-          },
-          //table columns names, phrases and etc
-          lang: {
-              markets: "Markets",
-              alts: "ALTS",
-              stable: "USDⓈ",
-              percent: "%",
-              symbol: "$",
-              item: "item",
-              favorites: "Favorites",
-              pair: "Pair",
-              coin: "Coin",
-              price: "Last price",
-              spread: "Spread",
-              change: "Change, 24h",
-              high: "High, 24h",
-              low: "Low, 24h",
-              volume: "Volume, 24h",
-              result: "No result",
-              loading: "Loading...",
-              search: "Search",// "Search",
-              all: "All",// "All",
-          },
-          //SignalR link
-          stagingUrl: "https://b2bx.cloud",
-          infoUrl: "/marketdata/info/",
-          frontOfficeUrl: "/frontoffice/api/info",
-          frontOfficeAssetsUrl: '/frontoffice/api/assets-info',
+      	defaults: {
+      		market: "USD",
+      		// Market table field by which data will be sorted by default
+      		sorting: "volume", // pair, coin, price, spread, change, high, low, volume
+      		tab: "market", // market, group - generates TABs automatically for markets from a pair or set manually in config.group.markets
+      		mode: "widget", // widget, page
+      		exchange: "https://www.b2bx.exchange/advanced/",
+      	},
+      	//table columns names, phrases and etc
+      	lang: {
+      		markets: "Markets",
+      		alts: "ALTS",
+      		stable: "USDⓈ",
+      		percent: "%",
+      		symbol: "$",
+      		item: "item",
+      		favorites: "Favorites",
+      		pair: "Pair",
+      		coin: "Coin",
+      		price: "Last price",
+      		spread: "Spread",
+      		change: "Change, 24h",
+      		high: "High, 24h",
+      		low: "Low, 24h",
+      		volume: "Volume, 24h",
+      		result: "No result",
+      		loading: "Loading...",
+      		search: "Search",// "Search",
+      		all: "All",// "All",
+      	},
+      	//SignalR link
+      	stagingUrl: "https://b2bx.cloud",
+      	infoUrl: "/marketdata/info/",
+      	frontOfficeUrl: "/frontoffice/api/info",
+      	frontOfficeAssetsUrl: '/frontoffice/api/assets-info',
       };
     </script>
     <div class="wrapper">
@@ -89,60 +92,75 @@
       </header>
       <div class="site-content" id="content">
         <div class="content">
-        </div>
-      </div>
-      <section class="feedback">
-        <div class="container feedback__container">
-          <div class="feedback__row">
-            <div class="feedback__title">Написать сообщение</div>
-            <div class="feedback__feedback-wrapper">
-              <div class="feedback__feedback">обратная <a href="">связь</a></div>
-              <div class="feedback__decor"></div>
-            </div>
-          </div>
-          <div class="feedback__row">
-            <div class="feedback__form-wrapper"> 
-              <form class="feedback__form">
-                <div class="feedback__input-wrapper">
-                  <input class="feedback__input-name input" placeholder="Анатолий Комаров" type="text">
-                  <input class="feedback__input-mail input" placeholder="ваш email" type="mail">
-                </div>
-                <textarea class="feedback__textarea textarea" placeholder="cообщение"></textarea>
-                <div class="feedback__condition-wrapper">
-                  <label class="feedback__label label">
-                    <input class="feedback__checkbox" type="checkbox"><span class="feedback__condition-text">Я принимаю условия <a href="#">пользовательского соглашения</a></span>
-                  </label>
-                  <button class="button feedback__button button" type="submit"> отправить
-                    <div class="span">></div>
-                  </button>
-                </div>
-              </form>
-            </div>
-            <div class="feedback__company-wrapper">
-              <div class="feedback__company">
-                <div class="feedback__subtitle">Компания</div>
-                <div class="feedback__company-name">Общество с ограниченной <br>   ответственностью «Евробудтрейд»</div>
-                <div class="feedback__subtitle">Юридический адрес</div>
-                <div class="feedback__adress">Украина, г. Киев, Киево-Святошинский р-н,<br> с. Чайки, ул. Антонова, 8 А</div>
-                <div class="feedback__company-row"> 
-                  <div class="feedback__column">
-                    <div class="feedback__subtitle">ИНН</div>
-                    <div class="feedback__document">542325235</div>
-                  </div>
-                  <div class="feedback__column">
-                    <div class="feedback__subtitle">КПП</div>
-                    <div class="feedback__document">542325235</div>
-                  </div>
-                  <div class="feedback__column">
-                    <div class="feedback__subtitle">ОГРН</div>
-                    <div class="feedback__document">1121690089685</div>
-                  </div>
+          <div class="navigation" style="background-image: url(images/index_banner/index_banner.png);">
+            <div class="container navigation__container">
+              <div class="navigation__img-wrapper"><img class="navigation__map" src="images/contacts/map.jpg">
+                <div class="navigation__content">
+                  <div class="navigation__subtitle">Контакты</div>
+                  <div class="navigation__tel">+38 (044) 3642970</div>
+                  <div class="navigation__tel">+38 (044) 3642971</div>
+                  <div class="navigation__tel">+38 (044) 3642972</div>
+                  <div class="navigation__adress">Украина, г. Киев, <br> Киево-Святошинский р-н, <br>с. Чайки, ул. Антонова, 8 А</div><a class="navigation__mail" href="#">info@sensei.ua</a>
                 </div>
               </div>
             </div>
           </div>
+          <section class="feedback">
+            <div class="container feedback__container">
+              <div class="feedback__row">
+                <div class="feedback__title">Написать сообщение</div>
+                <div class="feedback__feedback-wrapper">
+                  <div class="feedback__feedback">обратная <a href="">связь</a></div>
+                  <div class="feedback__decor"></div>
+                </div>
+              </div>
+              <div class="feedback__row">
+                <div class="feedback__form-wrapper"> 
+                  <form class="feedback__form">
+                    <div class="feedback__input-wrapper">
+                      <input class="feedback__input-name input" placeholder="Анатолий Комаров" type="text">
+                      <input class="feedback__input-mail input" placeholder="ваш email" type="mail">
+                    </div>
+                    <textarea class="feedback__textarea textarea" placeholder="cообщение"></textarea>
+                    <div class="feedback__condition-wrapper">
+                      <div class="feedback__condition">
+                        <label class="feedback__label label">
+                          <input class="feedback__checkbox" type="checkbox"><span class="feedback__custom-checkbox"></span>
+                        </label><span class="feedback__condition-text">Я принимаю условия <br><a href="#">пользовательского соглашения</a></span>
+                      </div><a class="blue_btn" href="#"><span>отправить</span>
+                        <svg>
+                          <use xlink:href="images/svg/symbol/sprite.svg#calc-arrow"></use>
+                        </svg></a>
+                    </div>
+                  </form>
+                </div>
+                <div class="feedback__company-wrapper"> 
+                  <div class="feedback__company">
+                    <div class="feedback__subtitle">Компания</div>
+                    <div class="feedback__company-name">Общество с ограниченной <br>   ответственностью «Евробудтрейд»</div>
+                    <div class="feedback__subtitle">Юридический адрес</div>
+                    <div class="feedback__adress">Украина, г. Киев, Киево-Святошинский р-н,<br> с. Чайки, ул. Антонова, 8 А</div>
+                    <div class="feedback__company-row"> 
+                      <div class="feedback__column">
+                        <div class="feedback__subtitle">ИНН</div>
+                        <div class="feedback__document">542325235</div>
+                      </div>
+                      <div class="feedback__column">
+                        <div class="feedback__subtitle">КПП</div>
+                        <div class="feedback__document">542325235</div>
+                      </div>
+                      <div class="feedback__column">
+                        <div class="feedback__subtitle">ОГРН</div>
+                        <div class="feedback__document">1121690089685</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
       <footer class="footer">
         <div class="container footer-container">
           <ul class="footer-row">
@@ -197,10 +215,418 @@
           </div>
         </div>
       </footer>
+      <div class="quiz quiz-1" style="display: none;">
+        <div class="quiz-slider-wrapper">
+          <div class="quiz-slider quiz-slider-1">
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-content"><span class="quiz-content-title">Выберите услугу</span>
+                  <div class="quiz-c1">
+                    <div class="quiz-c1-item">
+                      <input type="radio" name="pays"><b class="quiz-input"></b>
+                      <svg>
+                        <use xlink:href="images/svg/symbol/sprite.svg#build"></use>
+                      </svg><span>Вентиляция</span>
+                    </div>
+                    <div class="quiz-c1-item">
+                      <input type="radio" name="pays"><b class="quiz-input"></b>
+                      <svg>
+                        <use xlink:href="images/svg/symbol/sprite.svg#build"></use>
+                      </svg><span>Кондиционирование</span>
+                    </div>
+                    <div class="quiz-c1-item">
+                      <input type="radio" name="pays"><b class="quiz-input"></b>
+                      <svg>
+                        <use xlink:href="images/svg/symbol/sprite.svg#build"></use>
+                      </svg><span>Отопление</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости (шаг 2 из 6)</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-content"><span class="quiz-content-title">Где необходимо выполнить монтаж?</span>
+                  <div class="quiz-c2">
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Жилой дом / квартира</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Офис / бизнес-центр</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Торговый центр / магазин</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Ресторан / кафе / кальянная</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Производство / склад</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Отель / больница / мед. центр</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Бассейн / спа / аква-парк</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Спорткомплекс / фитнес-клуб</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости (шаг 3 из 6)</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-content"><span class="quiz-content-title">Укажите площадь объекта</span>
+                  <div class="quiz-c2">
+                    <label class="radio-input">
+                      <input type="radio" name="3"/><b></b><i></i><span>до 50 м2</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="3"/><b></b><i></i><span>от 50 до 100 м2</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="3"/><b></b><i></i><span>от 100 до 250 м2</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="3"/><b></b><i></i><span>от 250 до 500 м2</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="3"/><b></b><i></i><span>Свыше 500 м2</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости (шаг 4 из 6)</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-content"><span class="quiz-content-title">Укажите высоту потолков</span>
+                  <div class="quiz-c2">
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 2 м</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 3 м</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 4 м</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 6 м</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 8 м</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 10 м</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости (шаг 5 из 6)</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-content"><span class="quiz-content-title">Укажите тип вентиляции</span>
+                  <div class="quiz-c2">
+                    <label class="radio-input">
+                      <input type="radio" name="5"/><b></b><i></i><span>Приточная</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="5"/><b></b><i></i><span>Вытяжная</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="5"/><b></b><i></i><span>Приточно-вытяжная</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости (шаг 6 из 6)</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-form-wrapper">
+                  <div class="quiz-form-info">
+                    <div class="quiz-form-info-title">Стоимость вентиляции</div>
+                    <ul>
+                      <li>Объект:<span>офис / бизнес-центр</span></li>
+                      <li>Площадь:<span> от 250 до 500 м2</span></li>
+                      <li>Выс. Потолков:<span> до 4 м</span></li>
+                      <li>Тип системы:<span> приточно-вытяжная</span></li>
+                    </ul>
+                    <div class="quiz-form-info-price">Итого: <span>28 000 грн</span></div>
+                    <p class="quiz-form-info-desc">Это приблизительная стоимость поставки оборудования и работ по монтажу на вашем объекте. Для более точного расчета необходимо отправить свои данные</p>
+                  </div>
+                  <form class="quiz-form">
+                    <div class="quiz-form-title">Получить коммерческое предложение <span>со скидкой 5%</span></div>
+                    <label class="application-form-label">
+                      <input type="text"><span>ФИО</span>
+                    </label>
+                    <label class="application-form-label">
+                      <input type="text" name="phone"><span>номер телефона</span>
+                    </label>
+                    <label class="application-form-label application-form-label-for_file">
+                      <input type="file"><span>Добавить файл</span>
+                      <p class="application-form-file-name"></p>
+                      <p class="application-form-file-btn">выбрать</p>
+                    </label>
+                    <div class="application-form-submit">
+                      <div class="application-form-polic">
+                        <label class="application-form-polic-check">
+                          <input type="checkbox"><b></b>
+                        </label>
+                        <p>Я принимаю условия <a href="#">пользоваського соглашения</a></p>
+                      </div>
+                      <button class="calc-btn quiz-1-submit"><span>отправить</span>
+                        <svg>
+                          <use xlink:href="images/svg/symbol/sprite.svg#calc-arrow"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-tools quiz-tools-1"></div>
+        </div>
+      </div>
+      <div class="quiz quiz-2" style="display: none;">
+        <div class="quiz-slider-wrapper">
+          <div class="quiz-slider quiz-slider-2">
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-content"><span class="quiz-content-title">Выберите услугу</span>
+                  <div class="quiz-c1">
+                    <div class="quiz-c1-item">
+                      <input type="radio" name="pays"><b class="quiz-input"></b>
+                      <svg>
+                        <use xlink:href="images/svg/symbol/sprite.svg#build"></use>
+                      </svg><span>Вентиляция</span>
+                    </div>
+                    <div class="quiz-c1-item">
+                      <input type="radio" name="pays"><b class="quiz-input"></b>
+                      <svg>
+                        <use xlink:href="images/svg/symbol/sprite.svg#build"></use>
+                      </svg><span>Кондиционирование</span>
+                    </div>
+                    <div class="quiz-c1-item">
+                      <input type="radio" name="pays"><b class="quiz-input"></b>
+                      <svg>
+                        <use xlink:href="images/svg/symbol/sprite.svg#build"></use>
+                      </svg><span>Отопление</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости (шаг 2 из 6)</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-content"><span class="quiz-content-title">Где необходимо выполнить монтаж?</span>
+                  <div class="quiz-c2">
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Жилой дом / квартира</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Офис / бизнес-центр</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Торговый центр / магазин</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Ресторан / кафе / кальянная</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Производство / склад</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Отель / больница / мед. центр</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Бассейн / спа / аква-парк</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="2"/><b></b><i></i><span>Спорткомплекс / фитнес-клуб</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости (шаг 3 из 6)</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-content"><span class="quiz-content-title">Укажите площадь объекта</span>
+                  <div class="quiz-c2">
+                    <label class="radio-input">
+                      <input type="radio" name="3"/><b></b><i></i><span>до 50 м2</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="3"/><b></b><i></i><span>от 50 до 100 м2</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="3"/><b></b><i></i><span>от 100 до 250 м2</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="3"/><b></b><i></i><span>от 250 до 500 м2</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="3"/><b></b><i></i><span>Свыше 500 м2</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости (шаг 4 из 6)</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-content"><span class="quiz-content-title">Укажите высоту потолков</span>
+                  <div class="quiz-c2">
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 2 м</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 3 м</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 4 м</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 6 м</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 8 м</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="4"/><b></b><i></i><span>до 10 м</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости (шаг 5 из 6)</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-content"><span class="quiz-content-title">Укажите тип вентиляции</span>
+                  <div class="quiz-c2">
+                    <label class="radio-input">
+                      <input type="radio" name="5"/><b></b><i></i><span>Приточная</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="5"/><b></b><i></i><span>Вытяжная</span>
+                    </label>
+                    <label class="radio-input">
+                      <input type="radio" name="5"/><b></b><i></i><span>Приточно-вытяжная</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="quiz-item">
+                <div class="quiz-heading"><span>Рассчет стоимости (шаг 6 из 6)</span><a href="#"> 
+                    <svg>
+                      <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+                    </svg></a></div>
+                <div class="quiz-form-wrapper">
+                  <div class="quiz-form-info">
+                    <div class="quiz-form-info-title">Стоимость вентиляции</div>
+                    <ul>
+                      <li>Объект:<span>офис / бизнес-центр</span></li>
+                      <li>Площадь:<span> от 250 до 500 м2</span></li>
+                      <li>Выс. Потолков:<span> до 4 м</span></li>
+                      <li>Тип системы:<span> приточно-вытяжная</span></li>
+                    </ul>
+                    <div class="quiz-form-info-price">Итого: <span>28 000 грн</span></div>
+                    <p class="quiz-form-info-desc">Это приблизительная стоимость поставки оборудования и работ по монтажу на вашем объекте. Для более точного расчета необходимо отправить свои данные</p>
+                  </div>
+                  <form class="quiz-form">
+                    <div class="quiz-form-title">Получить коммерческое предложение <span>со скидкой 5%</span></div>
+                    <label class="application-form-label">
+                      <input type="text"><span>ФИО</span>
+                    </label>
+                    <label class="application-form-label">
+                      <input type="text" name="phone"><span>номер телефона</span>
+                    </label>
+                    <label class="application-form-label application-form-label-for_file">
+                      <input type="file"><span>Добавить файл</span>
+                      <p class="application-form-file-name"></p>
+                      <p class="application-form-file-btn">выбрать</p>
+                    </label>
+                    <div class="application-form-submit">
+                      <div class="application-form-polic">
+                        <label class="application-form-polic-check">
+                          <input type="checkbox"><b></b>
+                        </label>
+                        <p>Я принимаю условия <a href="#">пользоваського соглашения</a></p>
+                      </div>
+                      <button class="calc-btn quiz-1-submit"><span>отправить</span>
+                        <svg>
+                          <use xlink:href="images/svg/symbol/sprite.svg#calc-arrow"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-tools quiz-tools-2"></div>
+        </div>
+      </div>
+      <div style="display:none;" id="thx">
+        <div class="thx"><a href="#"> 
+            <svg>
+              <use xlink:href="images/svg/symbol/sprite.svg#close-quiz"></use>
+            </svg></a>
+          <div class="thx-title">Ваша заявка принята</div>
+          <div class="thx-desc">Спасибо за обращение. Наш менеджер свяжеться с вами в течение 10 минут</div>
+        </div>
+      </div>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

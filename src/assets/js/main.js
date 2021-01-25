@@ -154,5 +154,20 @@ $(document).ready(function () {
         }
       });
 
+      $(document).on('click', '.accordion-heading', function(e){
+        e.preventDefault();
+        const $this = $(this);
+        const $item = $this.parent('.accordion-item');
+        if(!$item.hasClass('is-active')){
+          $('.accordion-item').removeClass('is-active');
+          $('.accordion-content').slideUp();
+          $item.addClass('is-active');
+          $item.children('.accordion-content').slideDown();
+        } else{
+          $item.removeClass('is-active');
+          $item.children('.accordion-content').slideUp();
+        }
+
+      })
 });
 

@@ -1,0 +1,132 @@
+.services {
+  position: relative;
+  box-sizing: border-box;
+  padding: 60px 0;
+
+  &-container {
+    margin-bottom: 50px;
+  }
+
+  &-table {
+    width: 100%;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 135%;
+    color: #262c36;
+
+    tr {
+      border-bottom: 1px solid #e1e5ed;
+
+      &:first-child {
+        border: none;
+      }
+
+      td {
+        &:nth-child(1) {
+          width: 101px;
+        }
+
+        &:nth-child(2) {
+          div {
+            justify-content: flex-start;
+          }
+        }
+
+        &:nth-child(3) {
+          width: 194px;
+        }
+
+        &:nth-child(4) {
+          width: 195px;
+
+          div {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    div {
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 56px;
+      padding: 0 24px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 16px;
+        display: block;
+        width: 1px;
+        height: calc(100% - 32px);
+        background: #e1e5ed;
+      }
+    }
+
+    &-heading {
+      background: #f4f4f4;
+
+      div {
+        height: 64px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 135%;
+        text-align: center;
+        color: #6b7285;
+      }
+    }
+  }
+
+  &-desc {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 26px;
+    background: #f4f4f4;
+
+    &-text {
+      box-sizing: border-box;
+      padding: 25px 25px 25px 32px;
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-start;
+      align-items: center;
+
+      p {
+        box-sizing: border-box;
+        display: block;
+        padding: 0 15px;
+        max-width: 784px;
+        margin-right: auto;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: #262c36;
+      }
+    }
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100%;
+      width: 90px;
+      background: #e4eaff;
+      flex-shrink: 0;
+
+      svg {
+        display: block;
+        width: 35px;
+        height: 36px;
+      }
+    }
+  }
+}

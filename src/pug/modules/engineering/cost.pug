@@ -1,0 +1,26 @@
+section.cost
+    .container.cost__container
+        h3.cost__title Проектирование систем вентиляции
+        .cost__desc При строительстве или реконструкции любых видов зданий (коттеджей, квартир, загородных домов, промышленных и административных зданий) важным этапом является проектирование и монтаж систем вентиляции и кондиционирования. Проектирование вентиляции на предварительной стадии строительства позволяет значительно сэкономить средства на закупку и монтаж оборудования для инженерной системы, а также их эксплуатации.
+        .cost__form-wrapper
+            .cost__form-title Получить коммерческое предложение
+            form.cost__form
+                .cost__form-content
+                    .cost__input-wrapper
+                        input.cost__input-name.input(placeholder="Анатолий Комаров" type="text")
+                        .cost__contacts
+                            input.cost__input-mail.input(placeholder="ваш email" type="mail")
+                            input.cost__input-tel.input(placeholder="ваш email" type="mail")
+                        .cost__file
+                            input.cost__input-file.input(placeholder="ваш email" type="file")
+                    .cost__textarea-wrapper
+                        textarea.cost__textarea.textarea(placeholder="cообщение")
+                .feedback__condition-wrapper
+                    .feedback__condition
+                        label.feedback__label.label
+                            input.feedback__checkbox(type="checkbox")
+                            span.feedback__custom-checkbox
+                        span.feedback__condition-text Я принимаю условия <br>
+                            a(href="#") пользовательского соглашения
+                    +blue_btn("отправить")
+

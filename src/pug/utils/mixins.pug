@@ -1,72 +1,114 @@
 mixin menu-content(...items)
-  ul.header-sub_menu_content
-    each item in items
-      li.header-sub_menu_content-item
-        a.header-sub_menu_content-link(href="#")= item
+    ul.header-sub_menu_content
+        each item in items
+            li.header-sub_menu_content-item
+                a.header-sub_menu_content-link(href="#")= item
 
 mixin footer-link(title)
-  li.footer-row-item
-    a.footer-row-link(href="#")= title
+    li.footer-row-item
+        a.footer-row-link(href="#")= title
 
 mixin footer-heading(title)
-  li.footer-row-item
-    a.footer-row-heading(href="#")= title
+    li.footer-row-item
+        a.footer-row-heading(href="#")= title
 
 mixin sl-banner(title)
-  a.index_banner-item(href="#")
-    svg
-        use(xlink:href='images/svg/symbol/sprite.svg#build')
-    span= title
+    a.index_banner-item(href="#")
+        svg
+            use(xlink:href='images/svg/symbol/sprite.svg#build')
+        span= title
 
 mixin desc(number, desc)
-  .a_company-item
-    .a_company-number= number
-    .a_company-desc=desc
+    .a_company-item
+        .a_company-number= number
+        .a_company-desc=desc
 
 mixin m_btn
-  a.more_btn(href="#")
-    span подробнее
-    svg
-      use(xlink:href='images/svg/symbol/sprite.svg#more_btn')
+    a.more_btn(href="#")
+        span подробнее
+        svg
+            use(xlink:href='images/svg/symbol/sprite.svg#more_btn')
 
 mixin s_title(black, blue)
-  .section_title
-    span=black 
-      span=blue
+    .section_title
+        span=black 
+            span=blue
 
 mixin stages-item(title, desc, svg)
-  .stages-item
-    .stages-icon
-      svg
-        use(xlink:href=`images/svg/symbol/sprite.svg${svg}`)
-    .stages-text
-      span=title
-      p=desc
+    .stages-item
+        .stages-icon
+            svg
+                use(xlink:href=`images/svg/symbol/sprite.svg${svg}`)
+        .stages-text
+            span=title
+            p=desc
 
 mixin svg(svg)
-  svg
-    use(xlink:href=`images/svg/symbol/sprite.svg${svg}`)
+    svg
+        use(xlink:href=`images/svg/symbol/sprite.svg${svg}`)
 
 mixin ob-item(img, title)
-  .objects-item(style=`background-image: url(images/objects/${img});`)
-    .objects-text
-        span.objects-title= title
-        a.objects-btn(href="#")
-            span Рассчитать
-            +svg('#objects-svg')
+    .objects-item(style=`background-image: url(images/objects/${img});`)
+        .objects-text
+            span.objects-title= title
+            a.objects-btn(href="#")
+                span Рассчитать
+                +svg('#objects-svg')
 
 mixin fact(icon, title, desc)
-  .facts-item
-    .facts-icon= icon
-    .facts-text
-      span= title
-      p= desc
+    .facts-item
+        .facts-icon= icon
+        .facts-text
+            span= title
+            p= desc
 
 mixin arrow_btn(title)
-  a.more_btn(href="#")
+    a.more_btn(href="#")
+        span= title
+        svg
+            use(xlink:href='images/svg/symbol/sprite.svg#more_btn')
+
+mixin blue_btn(text) 
+    button.button(type="submit")= text
+        .button__icon
+            svg.button__arrow
+                use(xlink:href='images/svg/symbol/sprite.svg#arrow')
+
+mixin project-card(title,desc)
+    .project__card
+        img.project__img(src="images/engineering/card-img.png")
+        .project__title= title
+        .project__desc= desc
+
+mixin design-card(number,desc)
+    .design__card-wrapper
+        .design__card
+            .design__number-wrapper
+                .design__number= number
+            .design__desc= desc
+            .design__decor
+
+mixin order-card(img,title,desc)
+    .order__card-wrapper
+        .order__card
+            img.order__card-img(src=`images/order/${img}.png`)
+            .order__content-wrapper
+                .order__card-title= title
+                .order__card-desc= desc
+
+mixin condition()
+    .feedback__condition-wrapper
+        .feedback__condition
+            label.feedback__label.label
+                input.feedback__checkbox(type="checkbox")
+                span.feedback__custom-checkbox
+            span.feedback__condition-text Я принимаю условия <br>
+                a(href="#") пользовательского соглашения
+        +blue_btn("отправить")
+a.more_btn(href="#")
     span= title
     svg
-      use(xlink:href='images/svg/symbol/sprite.svg#more_btn')
+        use(xlink:href='images/svg/symbol/sprite.svg#more_btn')
 
 mixin radio-input(name, title)
   label.radio-input
@@ -85,3 +127,8 @@ mixin breadcroumbs(...items)
     each item in items
       li
         a(href="#")= item
+
+mixin services-table-content(...items)
+  each item in items
+      td
+        div= item

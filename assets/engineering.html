@@ -92,58 +92,115 @@
       </header>
       <div class="site-content" id="content">
         <div class="content">
-          <div class="index_banner" style="background-image: url(images/index_banner/index_banner.png);">
-            <div class="container">
-              <h2>Проектирование, монтаж и <br>обслуживание инженерных систем</h2>
-            </div>
-          </div>
-          <div class="index_banner-slider-wrapper">
-            <div class="container">
-              <div class="index_banner-slider">
-                <div><a class="index_banner-item quiz-btn-1" href="#">
-                    <svg>
-                      <use xlink:href="images/svg/symbol/sprite.svg#build"></use>
-                    </svg><span>Системы вентиляции</span></a></div>
-                <div><a class="index_banner-item quiz-btn-2" href="#">
-                    <svg>
-                      <use xlink:href="images/svg/symbol/sprite.svg#build"></use>
-                    </svg><span>Отопительные системы</span></a></div>
-                <div><a class="index_banner-item" href="#">
-                    <svg>
-                      <use xlink:href="images/svg/symbol/sprite.svg#build"></use>
-                    </svg><span>системы кондиционирования</span></a></div>
+          <section class="hero">
+            <div class="container hero__container" style="background-image: url(images/index_banner/index_banner.png);">
+              <h2 class="hero__title">Проектирование <br> Систем вентиляции</h2>
+              <div class="button-wrapper"><a class="blue_btn" href="#"><span>заказать проект</span>
+                  <svg>
+                    <use xlink:href="images/svg/symbol/sprite.svg#calc-arrow"></use>
+                  </svg></a>
               </div>
             </div>
-          </div>
-          <div class="a_company">
-            <div class="container a_company-container">
-              <div class="a_company-content">
-                <h2>Sed ut perspiciatis unde omnis <span class="nowrap">iste natus</span> error sit</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p><a class="more_btn" href="#"><span>подробнее</span>
-                  <svg>
-                    <use xlink:href="images/svg/symbol/sprite.svg#more_btn"></use>
-                  </svg></a>
-                <div class="a_company-catalog">
-                  <div class="a_company-item">
-                    <div class="a_company-number">170</div>
-                    <div class="a_company-desc">выполненных проектов</div>
-                  </div>
-                  <div class="a_company-item">
-                    <div class="a_company-number">55</div>
-                    <div class="a_company-desc">постоянных клиентов</div>
-                  </div>
-                  <div class="a_company-item">
-                    <div class="a_company-number">10</div>
-                    <div class="a_company-desc">монтажных бригад</div>
-                  </div>
-                  <div class="a_company-item">
-                    <div class="a_company-number">11</div>
-                    <div class="a_company-desc">квалифицированных проектировщиков</div>
+            <div class="container">
+              <ul class="hero__nav"> 
+                <li class="hero__nav-item">Главная </li>
+                <li class="hero__decor">   </li>
+                <li class="hero__nav-item">Типовые проекты</li>
+                <li class="hero__decor">   </li>
+                <li class="hero__nav-item">Магазины и торговые центры</li>
+              </ul>
+            </div>
+          </section>
+          <section class="engineering">
+            <div class="container engineering__container">
+              <h3 class="engineering__title">Проектирование систем вентиляции</h3>
+              <div class="engineering__desc">При строительстве или реконструкции любых видов зданий (коттеджей, квартир, загородных домов, промышленных и административных зданий) важным этапом является проектирование и монтаж систем вентиляции и кондиционирования. Проектирование вентиляции на предварительной стадии строительства позволяет значительно сэкономить средства на закупку и монтаж оборудования для инженерной системы, а также их эксплуатации.</div>
+            </div>
+          </section>
+          <section class="project">
+            <div class="container project__container"> 
+              <div class="section_title"><span>что выходит в <span>проект</span></span></div>
+              <div class="project__row">
+                <div class="project__card"><img class="project__img" src="images/engineering/card-img.png"/>
+                  <div class="project__title">Пакет чертежей</div>
+                  <div class="project__desc">Схемы вентиляционной системы;планы;разрезы.</div>
+                </div>
+                <div class="project__card"><img class="project__img" src="images/engineering/card-img.png"/>
+                  <div class="project__title">Спецификация</div>
+                  <div class="project__desc">Схемы вентиляционной системы;планы;разрезы.</div>
+                </div>
+                <div class="project__card"><img class="project__img" src="images/engineering/card-img.png"/>
+                  <div class="project__title">Задание рабочим</div>
+                  <div class="project__desc">Электрикам, сантехникам, строителям (при необходимости)</div>
+                </div>
+                <div class="project__card"><img class="project__img" src="images/engineering/card-img.png"/>
+                  <div class="project__title">Обоснование</div>
+                  <div class="project__desc">Технико-экономическая обоснованность выбора оборудования для вентиляции</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="design">
+            <div class="container design__container">
+              <div class="section_title"><span>этапы <span>проектирования</span></span></div>
+              <div class="design__row">
+                <div class="design__card-wrapper">
+                  <div class="design__card">
+                    <div class="design__number-wrapper">
+                      <div class="design__number">01</div>
+                    </div>
+                    <div class="design__desc">Расчет необходимого воздухообмена согласно техническим условиям, санитарным и строительным нормам.</div>
+                    <div class="design__decor"></div>
                   </div>
                 </div>
-              </div><img class="a_company-image" src="images/a_company/12_years.png" alt="">
+                <div class="design__card-wrapper">
+                  <div class="design__card">
+                    <div class="design__number-wrapper">
+                      <div class="design__number">02</div>
+                    </div>
+                    <div class="design__desc">Разработка схемы, по которой выполняется: расчет сечения воздуховодов; расчет уровня шума</div>
+                    <div class="design__decor"></div>
+                  </div>
+                </div>
+                <div class="design__card-wrapper">
+                  <div class="design__card">
+                    <div class="design__number-wrapper">
+                      <div class="design__number">03</div>
+                    </div>
+                    <div class="design__desc">Подготовка чертежа, который потом отдается на согласование заказчику</div>
+                    <div class="design__decor"></div>
+                  </div>
+                </div>
+                <div class="design__card-wrapper">
+                  <div class="design__card">
+                    <div class="design__number-wrapper">
+                      <div class="design__number">04</div>
+                    </div>
+                    <div class="design__desc">Согласование чертежа, а также внесения в него изменений, предложенных заказчиком или его дизайнером.</div>
+                    <div class="design__decor"></div>
+                  </div>
+                </div>
+                <div class="design__card-wrapper">
+                  <div class="design__card">
+                    <div class="design__number-wrapper">
+                      <div class="design__number">05</div>
+                    </div>
+                    <div class="design__desc">Подготовка документации по электропитанию, строительным и сантехническим работам.</div>
+                    <div class="design__decor"></div>
+                  </div>
+                </div>
+                <div class="design__card-wrapper">
+                  <div class="design__card">
+                    <div class="design__number-wrapper">
+                      <div class="design__number">06</div>
+                    </div>
+                    <div class="design__desc">Деталировка воздуховодов.</div>
+                    <div class="design__decor"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </section>
           <div class="project">
             <div class="container">
               <div class="section_title"><span>Наши<span> проекты</span></span></div>
@@ -176,222 +233,83 @@
               <div class="project-tools"></div>
             </div>
           </div>
-          <div class="stages">
-            <div class="container">
-              <div class="section_title"><span>этапы<span> работы</span></span></div>
-            </div>
-            <div class="stages-catalog">
-              <div class="stages-item">
-                <div class="stages-icon">
-                  <svg>
-                    <use xlink:href="images/svg/symbol/sprite.svg#stages-icon1"></use>
-                  </svg>
-                </div>
-                <div class="stages-text"><span>Изучение объекта</span>
-                  <p>Наш инженер БЕСПЛАТНО приезжает на объект для подробного его изучения и оценки.</p>
-                </div>
+          <section class="order">
+            <div class="container order__container"> 
+              <div class="order__title-wrapper">
+                <div class="section_title"><span>почему стоит  <span>заказать у нас</span></span></div>
               </div>
-              <div class="stages-item">
-                <div class="stages-icon">
-                  <svg>
-                    <use xlink:href="images/svg/symbol/sprite.svg#stages-icon2"></use>
-                  </svg>
-                </div>
-                <div class="stages-text"><span>Подбор и смета</span>
-                  <p>БЕСПЛАТНО подбираем несколько вариантов оборудования и предоставляем понятную развернутую смету.</p>
-                </div>
-              </div>
-              <div class="stages-item">
-                <div class="stages-icon">
-                  <svg>
-                    <use xlink:href="images/svg/symbol/sprite.svg#stages-icon3"></use>
-                  </svg>
-                </div>
-                <div class="stages-text"><span>Заключение договора</span>
-                  <p>Согласовываем и заключаем договор, прописываем сроки и ответственность.</p>
-                </div>
-              </div>
-              <div class="stages-item">
-                <div class="stages-icon">
-                  <svg>
-                    <use xlink:href="images/svg/symbol/sprite.svg#stages-icon4"></use>
-                  </svg>
-                </div>
-                <div class="stages-text"><span>Разработка проекта</span>
-                  <p>Наш собственный проектный отдел разрабатывает индивидуальный проект.</p>
-                </div>
-              </div>
-              <div class="stages-item">
-                <div class="stages-icon">
-                  <svg>
-                    <use xlink:href="images/svg/symbol/sprite.svg#stages-icon5"></use>
-                  </svg>
-                </div>
-                <div class="stages-text"><span>Доставка материалов</span>
-                  <p>Мы доставляем материалы оборудование на объект в самые кратчайшие сроки</p>
-                </div>
-              </div>
-              <div class="stages-item">
-                <div class="stages-icon">
-                  <svg>
-                    <use xlink:href="images/svg/symbol/sprite.svg#stages-icon6"></use>
-                  </svg>
-                </div>
-                <div class="stages-text"><span>Монтаж систем</span>
-                  <p>Осуществляем монтаж инженерных систем в сроки оговоренные в договоре</p>
-                </div>
-              </div>
-              <div class="stages-item">
-                <div class="stages-icon">
-                  <svg>
-                    <use xlink:href="images/svg/symbol/sprite.svg#stages-icon7"></use>
-                  </svg>
-                </div>
-                <div class="stages-text"><span>Пуско-наладочные работы</span>
-                  <p>Ввод системы в эксплуатацию. Обучаем Ваш персонал. Выдаем паспорта систем вентиляции.</p>
-                </div>
-              </div>
-              <div class="stages-item">
-                <div class="stages-icon">
-                  <svg>
-                    <use xlink:href="images/svg/symbol/sprite.svg#stages-icon8"></use>
-                  </svg>
-                </div>
-                <div class="stages-text"><span>Cервисное обслуживание</span>
-                  <p>Наш сервисно-гарантийный отдел поддерживает безотказную работоспособность оборудования.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="objects">
-            <div class="container">
-              <div class="section_title"><span>расчет<span> стоимости</span></span></div>
-              <div class="objects-catalog">
-                <div class="objects-item" style="background-image: url(images/objects/item1.jpg);">
-                  <div class="objects-text"><span class="objects-title">Жилые дома и квартиры</span><a class="objects-btn" href="#"><span>Рассчитать</span>
-                      <svg>
-                        <use xlink:href="images/svg/symbol/sprite.svg#objects-svg"></use>
-                      </svg></a></div>
-                </div>
-                <div class="objects-item" style="background-image: url(images/objects/item2.jpg);">
-                  <div class="objects-text"><span class="objects-title">Офисы и бизнес-центры </span><a class="objects-btn" href="#"><span>Рассчитать</span>
-                      <svg>
-                        <use xlink:href="images/svg/symbol/sprite.svg#objects-svg"></use>
-                      </svg></a></div>
-                </div>
-                <div class="objects-item" style="background-image: url(images/objects/item3.jpg);">
-                  <div class="objects-text"><span class="objects-title">Торговые центры и магазины</span><a class="objects-btn" href="#"><span>Рассчитать</span>
-                      <svg>
-                        <use xlink:href="images/svg/symbol/sprite.svg#objects-svg"></use>
-                      </svg></a></div>
-                </div>
-                <div class="objects-item" style="background-image: url(images/objects/item4.jpg);">
-                  <div class="objects-text"><span class="objects-title">Рестораны, кафе, кальянные</span><a class="objects-btn" href="#"><span>Рассчитать</span>
-                      <svg>
-                        <use xlink:href="images/svg/symbol/sprite.svg#objects-svg"></use>
-                      </svg></a></div>
-                </div>
-                <div class="objects-item" style="background-image: url(images/objects/item5.jpg);">
-                  <div class="objects-text"><span class="objects-title">Производства и склады</span><a class="objects-btn" href="#"><span>Рассчитать</span>
-                      <svg>
-                        <use xlink:href="images/svg/symbol/sprite.svg#objects-svg"></use>
-                      </svg></a></div>
-                </div>
-                <div class="objects-item" style="background-image: url(images/objects/item6.jpg);">
-                  <div class="objects-text"><span class="objects-title">Отели, больницы, мед. центры</span><a class="objects-btn" href="#"><span>Рассчитать</span>
-                      <svg>
-                        <use xlink:href="images/svg/symbol/sprite.svg#objects-svg"></use>
-                      </svg></a></div>
-                </div>
-                <div class="objects-item" style="background-image: url(images/objects/item7.jpg);">
-                  <div class="objects-text"><span class="objects-title">Бассейны, спа, аква-парки</span><a class="objects-btn" href="#"><span>Рассчитать</span>
-                      <svg>
-                        <use xlink:href="images/svg/symbol/sprite.svg#objects-svg"></use>
-                      </svg></a></div>
-                </div>
-                <div class="objects-item" style="background-image: url(images/objects/item8.jpg);">
-                  <div class="objects-text"><span class="objects-title">Спорткомплексы и фитнес-клубы</span><a class="objects-btn" href="#"><span>Рассчитать</span>
-                      <svg>
-                        <use xlink:href="images/svg/symbol/sprite.svg#objects-svg"></use>
-                      </svg></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="facts" style="background-image: url(images/facts/facts.jpg);">
-            <div class="container facts-container">
-              <div class="section_title"><span>почему<span> нам доверяю</span></span></div>
-            </div>
-            <div class="container facts-slider-wrapper">
-              <div class="facts-slider">
-                <div>
-                  <div class="facts-item">
-                    <div class="facts-icon">1</div>
-                    <div class="facts-text"><span>Четкие сроки реализации</span>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              <div class="order__row">
+                <div class="order__card-wrapper">
+                  <div class="order__card"><img class="order__card-img" src="images/order/card-img1.png"/>
+                    <div class="order__content-wrapper">
+                      <div class="order__card-title">Индивидуальная концепция</div>
+                      <div class="order__card-desc">Мы не работаем по шаблону, а разрабатываем персональную концепцию под каждого клиента и объект, поэтому все наши проекты уникальны.</div>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="facts-item">
-                    <div class="facts-icon">4</div>
-                    <div class="facts-text"><span>Качественные материалы</span>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <div class="order__card-wrapper">
+                  <div class="order__card"><img class="order__card-img" src="images/order/card-img2.png"/>
+                    <div class="order__content-wrapper">
+                      <div class="order__card-title">Подбор оборудования по бюджету</div>
+                      <div class="order__card-desc">Широкий диапазон бюджета на проектирование позволит каждому клиенту грамотно обустроить систему вентиляции, исходя из его финансовых возможностей.</div>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="facts-item">
-                    <div class="facts-icon">2</div>
-                    <div class="facts-text"><span>Опытная команда проектировщиков</span>
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                <div class="order__card-wrapper">
+                  <div class="order__card"><img class="order__card-img" src="images/order/card-img3.png"/>
+                    <div class="order__content-wrapper">
+                      <div class="order__card-title">Гарантия соблюдения сроков</div>
+                      <div class="order__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div class="facts-item">
-                    <div class="facts-icon">5</div>
-                    <div class="facts-text"><span>Выполнение работ под ключ</span>
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="facts-item">
-                    <div class="facts-icon">3</div>
-                    <div class="facts-text"><span>Качественное оборудование</span>
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="facts-item">
-                    <div class="facts-icon">6</div>
-                    <div class="facts-text"><span>Сервисное и гарантийное обслуживание</span>
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                <div class="order__card-wrapper">
+                  <div class="order__card"><img class="order__card-img" src="images/order/card-img4.png"/>
+                    <div class="order__content-wrapper">
+                      <div class="order__card-title">Большой опыт проектирования</div>
+                      <div class="order__card-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="clients">
-            <div class="container clients-wrapper">
-              <div class="clients-desc">
-                <div class="section_title"><span>наши<span> клиенты</span></span></div>
-                <h2>От кафе и кальянных до крупных предприятий</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              </div>
-              <div class="clients-content">
-                <div class="clients-item"><img src="images/clients/icon1.png" alt="" style="width:134px"></div>
-                <div class="clients-item"><img src="images/clients/icon2.png" alt="" style="width:149px"></div>
-                <div class="clients-item"><img src="images/clients/icon3.png" alt="" style="width:68px"></div>
-                <div class="clients-item"><img src="images/clients/icon4.png" alt="" style="width:105px"></div>
-                <div class="clients-item"><img src="images/clients/icon5.png" alt="" style="width:47px"></div>
-                <div class="clients-item"><img src="images/clients/icon6.png" alt="" style="width:56px"></div>
+          </section>
+          <section class="cost">
+            <div class="container cost__container">
+              <h3 class="cost__title">Проектирование систем вентиляции</h3>
+              <div class="cost__desc">При строительстве или реконструкции любых видов зданий (коттеджей, квартир, загородных домов, промышленных и административных зданий) важным этапом является проектирование и монтаж систем вентиляции и кондиционирования. Проектирование вентиляции на предварительной стадии строительства позволяет значительно сэкономить средства на закупку и монтаж оборудования для инженерной системы, а также их эксплуатации.</div>
+              <div class="cost__form-wrapper">
+                <div class="cost__form-title">Получить коммерческое предложение</div>
+                <form class="cost__form">
+                  <div class="cost__form-content">
+                    <div class="cost__input-wrapper">
+                      <input class="cost__input-name input" placeholder="Анатолий Комаров" type="text">
+                      <div class="cost__contacts">
+                        <input class="cost__input-mail input" placeholder="ваш email" type="mail">
+                        <input class="cost__input-tel input" placeholder="ваш email" type="mail">
+                      </div>
+                      <div class="cost__file">
+                        <input class="cost__input-file input" placeholder="ваш email" type="file">
+                      </div>
+                    </div>
+                    <div class="cost__textarea-wrapper">
+                      <textarea class="cost__textarea textarea" placeholder="cообщение"></textarea>
+                    </div>
+                  </div>
+                  <div class="feedback__condition-wrapper">
+                    <div class="feedback__condition">
+                      <label class="feedback__label label">
+                        <input class="feedback__checkbox" type="checkbox"><span class="feedback__custom-checkbox"></span>
+                      </label><span class="feedback__condition-text">Я принимаю условия <br><a href="#">пользовательского соглашения</a></span>
+                    </div><a class="blue_btn" href="#"><span>отправить</span>
+                      <svg>
+                        <use xlink:href="images/svg/symbol/sprite.svg#calc-arrow"></use>
+                      </svg></a>
+                  </div>
+                </form>
               </div>
             </div>
-          </div>
+          </section>
           <div class="articles">
             <div class="container articles-container">
               <div class="section_title"><span>полезные<span> статьи</span></span></div>

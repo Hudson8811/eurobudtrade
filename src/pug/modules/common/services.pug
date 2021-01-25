@@ -1,0 +1,39 @@
+.services
+    .container.services-container
+        +s_title('стоимость', ' услуг')
+    
+    .container
+        table.services-table
+            tr.services-table-heading
+                +services-table-content('№','Наименование услуги','Цена, грн','Ед. измерения')
+            tr
+                +services-table-content('1','Монтаж воздуховода','300 ₴','м.п')
+            tr
+                +services-table-content('2','Монтаж корпуса на профиль','700 ₴','шт')
+            tr
+                +services-table-content('3','Монтаж электродвигателя к электросети','500 ₴','шт')
+            tr
+                +services-table-content('4','Центробежный вентилятор','1 300 ₴','шт')
+            tr
+                +services-table-content('5','Монтаж воздуховода','300 ₴','м.п')
+            tr
+                +services-table-content('6','Монтаж корпуса на профиль','700 ₴','шт')
+            tr
+                +services-table-content('7','Монтаж электродвигателя к электросети','500 ₴','шт')
+            tr
+                +services-table-content('8','Центробежный вентилятор','1 300 ₴','шт')
+            tr
+                +services-table-content('9','Центробежный вентилятор','1 300 ₴','шт')
+            tr
+                +services-table-content('10','Монтаж воздуховода','300 ₴','м.п')
+            tr
+                +services-table-content('12','Монтаж корпуса на профиль','700 ₴','шт')
+            tr
+                +services-table-content('13','Монтаж электродвигателя к электросети','500 ₴','шт')
+        
+        .services-desc
+            .services-desc-icon
+                +svg('#desc')
+            .services-desc-text
+                p Обращаем ваше внимание, что в таблице приведены стандартные расценки на монтаж вентиляции. Каждое здание / объект, имеют свои конструктивные особенности, что может влиять на окончательную цену.
+                +blue_btn('получить смету')
