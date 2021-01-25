@@ -18,7 +18,7 @@ body {
 
 .container {
   position: relative;
-  width: 98%;
+  width: calc(100% - 30px);
   max-width: 1240px;
   margin: 0 auto;
 }
@@ -75,6 +75,24 @@ body {
 
     span {
       color: #426cff;
+    }
+  }
+
+  @include respond-to('tablet-wide') {
+    width: 100%;
+    display: flex;
+
+    span {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #262c36;
+    }
+
+    &:after {
+      margin-left: auto;
     }
   }
 }
@@ -444,5 +462,13 @@ body {
         display: none;
       }
     }
+  }
+}
+
+.application-form-label-textarea {
+  height: 109px;
+
+  span {
+    bottom: 70%;
   }
 }

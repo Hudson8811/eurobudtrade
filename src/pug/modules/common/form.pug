@@ -1,0 +1,36 @@
+.cl_form-wrapper
+    .container.cl_form-container
+        .cl_form-desc
+            h2 Заказать монтаж систем вентиляции в Киеве
+            p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+            p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+        form.cl_form
+            label.application-form-label
+                input(type="text")
+                span ФИО
+            .cl_form-row
+                label.application-form-label
+                    input(type="email")
+                    span email адрес
+                label.application-form-label
+                    input(type="text")
+                    span номер телефона
+
+            label.application-form-label.application-form-label-textarea
+                textarea
+                span Сообщение
+            label.application-form-label.application-form-label-for_file
+                input(type="file")
+                span Добавить файл
+                p.application-form-file-name
+                p.application-form-file-btn выбрать
+            .application-form-submit
+                .application-form-polic
+                    label.application-form-polic-check
+                        input(type="checkbox")
+                        b
+                    p Я принимаю условия #[a(href="#") пользоваського соглашения]
+                button.calc-btn.quiz-1-submit
+                    span отправить
+                    +svg('#calc-arrow')

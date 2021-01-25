@@ -1,0 +1,64 @@
+.cl_form {
+  position: relative;
+  box-sizing: border-box;
+  width: 49.19%;
+  padding: 68px 72px 56px 56px;
+  background: #f4f4f4;
+
+  &-wrapper {
+    position: relative;
+    box-sizing: border-box;
+    padding: 60px 0 120px;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  &-desc {
+    width: 44%;
+    padding-right: 2%;
+    margin-right: auto;
+
+    h2 {
+      display: block;
+      margin-bottom: 34px;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 135%;
+      color: #262c36;
+    }
+
+    p {
+      display: block;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 150%;
+      color: #6b7285;
+
+      & + P {
+        margin-top: 28px;
+      }
+    }
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .application-form-label {
+      width: calc(50% - 12px);
+    }
+  }
+
+  .calc-btn {
+    margin-left: auto;
+  }
+
+  .application-form-submit {
+    margin-top: 40px;
+  }
+}

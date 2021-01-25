@@ -6,6 +6,10 @@
   background-position: center center;
   background-repeat: no-repeat;
 
+  @include respond-to('tablet-wide') {
+    padding: 57px 0 126px;
+  }
+
   h2 {
     display: flex;
     justify-content: flex-start;
@@ -15,6 +19,21 @@
     font-size: 40px;
     line-height: 150%;
     color: #ffffff;
+
+    @include respond-to('tablet-wide') {
+      min-height: 281px;
+      max-width: 292px;
+      margin: 0 auto;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 125%;
+      text-align: center;
+      justify-content: center;
+
+      br {
+        display: none;
+      }
+    }
   }
 
   &-slider {
@@ -24,6 +43,33 @@
       position: relative;
       z-index: 2;
       height: 206px;
+
+      @include respond-to('tablet-wide') {
+        height: 160px;
+      }
+    }
+
+    .slick-arrow {
+      position: absolute;
+      z-index: 9;
+      top: 146px;
+      margin: 0;
+      padding: 0;
+      border: none;
+      font-size: 0;
+      height: 27px;
+      width: 16px;
+      background: transparent center / cover url(../images/slider-icon.png) no-repeat;
+      cursor: pointer;
+
+      &.slick-next {
+        right: 16px;
+        transform: rotate(180deg);
+      }
+
+      &.slick-prev {
+        left: 16px;
+      }
     }
   }
 
@@ -36,6 +82,10 @@
     text-decoration: none;
     transition: background 0.2s linear;
 
+    @include respond-to('tablet-wide') {
+      height: 319px;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -45,6 +95,10 @@
       height: calc(100% - 72px);
       width: 1px;
       background: #d4d7de;
+
+      @include respond-to('tablet-wide') {
+        display: none;
+      }
     }
 
     &:last-child {
@@ -54,18 +108,20 @@
     }
 
     &:hover {
-      background: #6684ec;
+      @include respond-to-min('desktop') {
+        background: #6684ec;
 
-      &:before {
-        opacity: 0;
-      }
+        &:before {
+          opacity: 0;
+        }
 
-      span {
-        color: #ffffff;
-      }
+        span {
+          color: #ffffff;
+        }
 
-      use {
-        --build-color: #da7574;
+        use {
+          --build-color: #da7574;
+        }
       }
     }
 
@@ -75,6 +131,11 @@
       height: 247px;
       width: 98%;
       margin: 0 auto;
+
+      @include respond-to('tablet-wide') {
+        width: 204px;
+        height: 193px;
+      }
     }
 
     span {
@@ -88,6 +149,13 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: #262c36;
+
+      @include respond-to('tablet-wide') {
+        max-width: 200px;
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 135%;
+      }
     }
     use {
       --build-color: #6684ec;

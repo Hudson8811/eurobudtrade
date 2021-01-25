@@ -1,7 +1,4 @@
-<a class="more_btn" href="#"><span></span>
-  <svg>
-    <use xlink:href="images/svg/symbol/sprite.svg#more_btn"></use>
-  </svg></a><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
@@ -84,12 +81,13 @@
                 <svg>
                   <use xlink:href="images/svg/symbol/sprite.svg#lang"></use>
                 </svg><span>Укр</span></a></li>
-          </ul><a class="header-phone" href="tel:+380443642970">
+          </ul><a class="header-burger" href="#"><span></span></a><a class="header-phone" href="tel:+380443642970">
             <svg>
               <use xlink:href="images/svg/symbol/sprite.svg#phone"></use>
             </svg><span>+38 (044) 364 29 70</span></a>
         </div>
       </header>
+      <div class="header-overlay"></div>
       <div class="site-content" id="content">
         <div class="content">
           <section class="hero">
@@ -283,24 +281,29 @@
                 <form class="cost__form">
                   <div class="cost__form-content">
                     <div class="cost__input-wrapper">
-                      <input class="cost__input-name input" placeholder="Анатолий Комаров" type="text">
-                      <div class="cost__contacts">
-                        <input class="cost__input-mail input" placeholder="ваш email" type="mail">
-                        <input class="cost__input-tel input" placeholder="ваш email" type="mail">
+                      <div class="input-name-wrapper cost__name-wrapper">
+                        <input class="input" placeholder="Анатолий Комаров" type="text"/>
+                        <div class="input-name-decor">ФИО</div>
                       </div>
-                      <div class="cost__file">
-                        <input class="cost__input-file input" placeholder="ваш email" type="file">
+                      <div class="input-group cost__input-group"> 
+                        <input class="input cost__input-mail" placeholder="email адрес" type="mail"/>
+                        <input class="input cost__input-tel" placeholder="номер телефона" type="tel"/>
                       </div>
+                      <label class="application-form-label application-form-label-for_file cost__form-file-label">
+                        <input type="file"/><span>Добавить файл</span>
+                        <p class="application-form-file-name"></p>
+                        <p class="application-form-file-btn">выбрать</p>
+                      </label>
                     </div>
                     <div class="cost__textarea-wrapper">
-                      <textarea class="cost__textarea textarea" placeholder="cообщение"></textarea>
+                      <textarea class="textarea cost__textarea" placeholder="cообщение"></textarea>
                     </div>
                   </div>
-                  <div class="feedback__condition-wrapper">
-                    <div class="feedback__condition">
-                      <label class="feedback__label label">
-                        <input class="feedback__checkbox" type="checkbox"><span class="feedback__custom-checkbox"></span>
-                      </label><span class="feedback__condition-text">Я принимаю условия <br><a href="#">пользовательского соглашения</a></span>
+                  <div class="condition-wrapper cost__condition-wrapper">
+                    <div class="condition cost__condition">
+                      <label class="condition-label label">
+                        <input class="condition-checkbox" type="checkbox"/><span class="condition-custom-checkbox"></span>
+                      </label><span class="feedback__condition-text cost__condition-text">Я принимаю условия <br><a href="#">пользовательского соглашения</a></span>
                     </div><a class="blue_btn" href="#"><span>отправить</span>
                       <svg>
                         <use xlink:href="images/svg/symbol/sprite.svg#calc-arrow"></use>

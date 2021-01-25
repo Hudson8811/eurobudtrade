@@ -3,10 +3,19 @@
   box-sizing: border-box;
   padding: 120px 0 60px;
 
+  @include respond-to('tablet-wide') {
+    padding: 56px 0 32px;
+  }
+
   &-container {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+
+    @include respond-to('tablet-wide') {
+      position: relative;
+      display: block;
+    }
   }
 
   &-content {
@@ -16,6 +25,12 @@
     padding-right: 20px;
     margin-right: auto;
 
+    @include respond-to('tablet-wide') {
+      width: 100%;
+      max-width: none;
+      padding-right: 0;
+    }
+
     h2 {
       display: block;
       margin-bottom: 50px;
@@ -23,6 +38,14 @@
       font-size: 40px;
       line-height: 135%;
       color: #262c36;
+
+      @include respond-to('tablet-wide') {
+        margin-bottom: 24px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 135%;
+        color: #262c36;
+      }
     }
 
     p {
@@ -32,6 +55,13 @@
       font-size: 15px;
       line-height: 180%;
       color: #6b7285;
+
+      @include respond-to('tablet-wide') {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 180%;
+        color: #6b7285;
+      }
     }
   }
 
@@ -40,7 +70,22 @@
     width: 381px;
     margin-top: 8px;
     flex-shrink: 0;
-    object-fit: cover;
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @include respond-to('tablet-wide') {
+      position: absolute;
+      bottom: 282px;
+      left: 50%;
+      max-width: 345px;
+      width: 100%;
+      transform: translateX(-50%);
+      margin: 0;
+    }
   }
 
   &-catalog {
@@ -48,6 +93,11 @@
     justify-content: flex-start;
     align-items: stretch;
     margin-top: 73px;
+
+    @include respond-to('tablet-wide') {
+      padding-top: 325px;
+      flex-wrap: wrap;
+    }
   }
 
   &-item {
@@ -60,6 +110,18 @@
       margin-right: 0;
       padding-right: 0;
     }
+
+    @include respond-to('tablet-wide') {
+      width: calc(50% - 28px);
+      margin: 0;
+      padding: 0;
+      margin-bottom: 24px;
+      margin-right: 56px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
   }
 
   &-number {
@@ -69,6 +131,10 @@
     font-size: 40px;
     line-height: 135%;
     color: #262c36;
+
+    @include respond-to('tablet-wide') {
+      margin-bottom: 16px;
+    }
   }
 
   &-desc {
@@ -78,5 +144,8 @@
     line-height: 150%;
     text-transform: uppercase;
     color: #6b7285;
+
+    @include respond-to('tablet-wide') {
+    }
   }
 }

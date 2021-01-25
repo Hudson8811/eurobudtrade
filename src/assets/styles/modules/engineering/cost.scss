@@ -31,7 +31,7 @@
         font-size: 25px;
         line-height: 135%;
         color: #262C36;
-        margin-bottom: 4 border0px;
+        margin-bottom: 40px;
     }
 
     &__form-content {
@@ -41,18 +41,22 @@
     &__input-wrapper {
         width: 50%;
         margin-right: 40px;
+        position: relative;
     }
 
     &__form-content {
         display: flex;
     }
 
+    &__name-wrapper {
+        margin-bottom: 20px;
+    }
+
     &__input-name {
         margin-bottom: 20px;
     }
 
-    &__contacts {
-        display: flex;
+    &__input-group {
         margin-bottom: 20px;
     }
 
@@ -65,7 +69,9 @@
         border: none;
     }
 
-    &__file {}
+    &__form-file-label {
+        margin: 0;
+    }
 
     &__input-file {
         background: #FFFFFF;

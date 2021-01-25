@@ -10,17 +10,10 @@ section.feedback
             .feedback__form-wrapper 
                 form.feedback__form
                     .feedback__input-wrapper
-                        input.feedback__input-name.input(placeholder="Анатолий Комаров" type="text")
-                        input.feedback__input-mail.input(placeholder="ваш email" type="mail")
-                    textarea.feedback__textarea.textarea(placeholder="cообщение")
-                    .feedback__condition-wrapper
-                        .feedback__condition
-                            label.feedback__label.label
-                                input.feedback__checkbox(type="checkbox")
-                                span.feedback__custom-checkbox
-                            span.feedback__condition-text Я принимаю условия <br>
-                                a(href="#") пользовательского соглашения
-                        +blue_btn("отправить")
+                        +input-name("feedback")
+                        +input-mail("feedback")
+                    +textarea("feedback")
+                    +condition("feedback")
             .feedback__company-wrapper 
                 .feedback__company
                     .feedback__subtitle Компания

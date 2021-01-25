@@ -1,0 +1,14 @@
+extends template/main
+
+block variables
+	- var title = 'Монтаж систем кондиционирования'
+	- var pageClass = 'mounting_page'
+
+block content
+	include modules/conditioning/mounting_banner
+	include modules/conditioning/mounting
+	include modules/common/project
+	include modules/common/stages
+	include modules/common/services
+	include modules/common/accordion
+	include modules/common/form

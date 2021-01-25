@@ -1,7 +1,4 @@
-<a class="more_btn" href="#"><span></span>
-  <svg>
-    <use xlink:href="images/svg/symbol/sprite.svg#more_btn"></use>
-  </svg></a><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
@@ -84,12 +81,13 @@
                 <svg>
                   <use xlink:href="images/svg/symbol/sprite.svg#lang"></use>
                 </svg><span>Укр</span></a></li>
-          </ul><a class="header-phone" href="tel:+380443642970">
+          </ul><a class="header-burger" href="#"><span></span></a><a class="header-phone" href="tel:+380443642970">
             <svg>
               <use xlink:href="images/svg/symbol/sprite.svg#phone"></use>
             </svg><span>+38 (044) 364 29 70</span></a>
         </div>
       </header>
+      <div class="header-overlay"></div>
       <div class="site-content" id="content">
         <div class="content">
           <div class="index_banner" style="background-image: url(images/index_banner/index_banner.png);">
@@ -141,7 +139,10 @@
                     <div class="a_company-desc">квалифицированных проектировщиков</div>
                   </div>
                 </div>
-              </div><img class="a_company-image" src="images/a_company/12_years.png" alt="">
+              </div>
+              <picture class="a_company-image">
+                <source srcset="images/a_company/yr-mobile.png" media="(max-width: 1000px)"><img src="images/a_company/12_years.png">
+              </picture>
             </div>
           </div>
           <div class="project">
