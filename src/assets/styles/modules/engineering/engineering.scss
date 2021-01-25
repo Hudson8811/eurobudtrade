@@ -1,0 +1,21 @@
+.engineering {
+    padding-top: 80px;
+
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 135%;
+        color: #262C36;
+        margin-bottom: 48px;
+    }
+
+    &__desc {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+        color: #6B7285;
+        max-width: 960px;
+    }
+}

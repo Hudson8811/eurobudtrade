@@ -14,13 +14,14 @@ section.feedback
                         input.feedback__input-mail.input(placeholder="ваш email" type="mail")
                     textarea.feedback__textarea.textarea(placeholder="cообщение")
                     .feedback__condition-wrapper
-                        label.feedback__label.label
-                            input.feedback__checkbox(type="checkbox")
-                            span.feedback__condition-text Я принимаю условия 
+                        .feedback__condition
+                            label.feedback__label.label
+                                input.feedback__checkbox(type="checkbox")
+                                span.feedback__custom-checkbox
+                            span.feedback__condition-text Я принимаю условия <br>
                                 a(href="#") пользовательского соглашения
-                        button.button.feedback__button.button(type="submit")  отправить
-                            .span >
-            .feedback__company-wrapper
+                        +blue_btn("отправить")
+            .feedback__company-wrapper 
                 .feedback__company
                     .feedback__subtitle Компания
                     .feedback__company-name Общество с ограниченной <br>   ответственностью «Евробудтрейд»

@@ -1,5 +1,5 @@
 .button {
-    padding: 12px 11px;
+    padding: 12px 12px 12px 24px;
     background: #426CFF;
     border-radius: 3px;
     display: inline-flex;
@@ -11,4 +11,12 @@
     text-transform: uppercase;
     color: #FFFFFF;
 
+    &__arrow {
+        width: 15px;
+        height: 15px;
+    }
+
+    &__icon {
+        padding-left: 8px;
+    }
 }

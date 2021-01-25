@@ -1,0 +1,85 @@
+.cost {
+    padding-top: 80px;
+
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 135%;
+        color: #262C36;
+        margin-bottom: 48px;
+    }
+
+    &__desc {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+        color: #6B7285;
+        max-width: 960px;
+        margin-bottom: 120px;
+    }
+
+    &__form-wrapper {
+        padding: 48px 80px 40px 56px;
+        background: #F4F4F4;
+        box-sizing: border-box;
+    }
+
+    &__form-title {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 135%;
+        color: #262C36;
+        margin-bottom: 4 border0px;
+    }
+
+    &__form-content {
+        margin-bottom: 40px;
+    }
+
+    &__input-wrapper {
+        width: 50%;
+        margin-right: 40px;
+    }
+
+    &__form-content {
+        display: flex;
+    }
+
+    &__input-name {
+        margin-bottom: 20px;
+    }
+
+    &__contacts {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__input-mail {
+        border: none;
+        margin-right: 25px;
+    }
+
+    &__input-tel {
+        border: none;
+    }
+
+    &__file {}
+
+    &__input-file {
+        background: #FFFFFF;
+        border: none;
+    }
+
+    &__textarea-wrapper {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    &__textarea {
+        height: 100%;
+        box-sizing: border-box;
+
+    }
+}

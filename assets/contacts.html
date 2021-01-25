@@ -6,48 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content=""><link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
   <body class="main_page">
     <script>
       let marketsConfig = {
-          defaults: {
-              market: "USD",
-              // Market table field by which data will be sorted by default
-              sorting: "volume", // pair, coin, price, spread, change, high, low, volume
-              tab: "market", // market, group - generates TABs automatically for markets from a pair or set manually in config.group.markets
-              mode: "widget", // widget, page
-              exchange: "https://www.b2bx.exchange/advanced/",
-          },
-          //table columns names, phrases and etc
-          lang: {
-              markets: "Markets",
-              alts: "ALTS",
-              stable: "USDⓈ",
-              percent: "%",
-              symbol: "$",
-              item: "item",
-              favorites: "Favorites",
-              pair: "Pair",
-              coin: "Coin",
-              price: "Last price",
-              spread: "Spread",
-              change: "Change, 24h",
-              high: "High, 24h",
-              low: "Low, 24h",
-              volume: "Volume, 24h",
-              result: "No result",
-              loading: "Loading...",
-              search: "Search",// "Search",
-              all: "All",// "All",
-          },
-          //SignalR link
-          stagingUrl: "https://b2bx.cloud",
-          infoUrl: "/marketdata/info/",
-          frontOfficeUrl: "/frontoffice/api/info",
-          frontOfficeAssetsUrl: '/frontoffice/api/assets-info',
+      	defaults: {
+      		market: "USD",
+      		// Market table field by which data will be sorted by default
+      		sorting: "volume", // pair, coin, price, spread, change, high, low, volume
+      		tab: "market", // market, group - generates TABs automatically for markets from a pair or set manually in config.group.markets
+      		mode: "widget", // widget, page
+      		exchange: "https://www.b2bx.exchange/advanced/",
+      	},
+      	//table columns names, phrases and etc
+      	lang: {
+      		markets: "Markets",
+      		alts: "ALTS",
+      		stable: "USDⓈ",
+      		percent: "%",
+      		symbol: "$",
+      		item: "item",
+      		favorites: "Favorites",
+      		pair: "Pair",
+      		coin: "Coin",
+      		price: "Last price",
+      		spread: "Spread",
+      		change: "Change, 24h",
+      		high: "High, 24h",
+      		low: "Low, 24h",
+      		volume: "Volume, 24h",
+      		result: "No result",
+      		loading: "Loading...",
+      		search: "Search",// "Search",
+      		all: "All",// "All",
+      	},
+      	//SignalR link
+      	stagingUrl: "https://b2bx.cloud",
+      	infoUrl: "/marketdata/info/",
+      	frontOfficeUrl: "/frontoffice/api/info",
+      	frontOfficeAssetsUrl: '/frontoffice/api/assets-info',
       };
     </script>
     <div class="wrapper">
@@ -89,60 +89,79 @@
       </header>
       <div class="site-content" id="content">
         <div class="content">
-        </div>
-      </div>
-      <section class="feedback">
-        <div class="container feedback__container">
-          <div class="feedback__row">
-            <div class="feedback__title">Написать сообщение</div>
-            <div class="feedback__feedback-wrapper">
-              <div class="feedback__feedback">обратная <a href="">связь</a></div>
-              <div class="feedback__decor"></div>
-            </div>
-          </div>
-          <div class="feedback__row">
-            <div class="feedback__form-wrapper"> 
-              <form class="feedback__form">
-                <div class="feedback__input-wrapper">
-                  <input class="feedback__input-name input" placeholder="Анатолий Комаров" type="text">
-                  <input class="feedback__input-mail input" placeholder="ваш email" type="mail">
-                </div>
-                <textarea class="feedback__textarea textarea" placeholder="cообщение"></textarea>
-                <div class="feedback__condition-wrapper">
-                  <label class="feedback__label label">
-                    <input class="feedback__checkbox" type="checkbox"><span class="feedback__condition-text">Я принимаю условия <a href="#">пользовательского соглашения</a></span>
-                  </label>
-                  <button class="button feedback__button button" type="submit"> отправить
-                    <div class="span">></div>
-                  </button>
-                </div>
-              </form>
-            </div>
-            <div class="feedback__company-wrapper">
-              <div class="feedback__company">
-                <div class="feedback__subtitle">Компания</div>
-                <div class="feedback__company-name">Общество с ограниченной <br>   ответственностью «Евробудтрейд»</div>
-                <div class="feedback__subtitle">Юридический адрес</div>
-                <div class="feedback__adress">Украина, г. Киев, Киево-Святошинский р-н,<br> с. Чайки, ул. Антонова, 8 А</div>
-                <div class="feedback__company-row"> 
-                  <div class="feedback__column">
-                    <div class="feedback__subtitle">ИНН</div>
-                    <div class="feedback__document">542325235</div>
-                  </div>
-                  <div class="feedback__column">
-                    <div class="feedback__subtitle">КПП</div>
-                    <div class="feedback__document">542325235</div>
-                  </div>
-                  <div class="feedback__column">
-                    <div class="feedback__subtitle">ОГРН</div>
-                    <div class="feedback__document">1121690089685</div>
-                  </div>
+          <div class="navigation" style="background-image: url(images/index_banner/index_banner.png);">
+            <div class="container navigation__container">
+              <div class="navigation__img-wrapper"><img class="navigation__map" src="images/contacts/map.jpg">
+                <div class="navigation__content">
+                  <div class="navigation__subtitle">Контакты</div>
+                  <div class="navigation__tel">+38 (044) 3642970</div>
+                  <div class="navigation__tel">+38 (044) 3642971</div>
+                  <div class="navigation__tel">+38 (044) 3642972</div>
+                  <div class="navigation__adress">Украина, г. Киев, <br> Киево-Святошинский р-н, <br>с. Чайки, ул. Антонова, 8 А</div><a class="navigation__mail" href="#">info@sensei.ua</a>
                 </div>
               </div>
             </div>
           </div>
+          <section class="feedback">
+            <div class="container feedback__container">
+              <div class="feedback__row">
+                <div class="feedback__title">Написать сообщение</div>
+                <div class="feedback__feedback-wrapper">
+                  <div class="feedback__feedback">обратная <a href="">связь</a></div>
+                  <div class="feedback__decor"></div>
+                </div>
+              </div>
+              <div class="feedback__row">
+                <div class="feedback__form-wrapper"> 
+                  <form class="feedback__form">
+                    <div class="feedback__input-wrapper">
+                      <input class="feedback__input-name input" placeholder="Анатолий Комаров" type="text">
+                      <input class="feedback__input-mail input" placeholder="ваш email" type="mail">
+                    </div>
+                    <textarea class="feedback__textarea textarea" placeholder="cообщение"></textarea>
+                    <div class="feedback__condition-wrapper">
+                      <div class="feedback__condition">
+                        <label class="feedback__label label">
+                          <input class="feedback__checkbox" type="checkbox"><span class="feedback__custom-checkbox"></span>
+                        </label><span class="feedback__condition-text">Я принимаю условия <br><a href="#">пользовательского соглашения</a></span>
+                      </div>
+                      <button class="button" type="submit">отправить
+                        <div class="button__icon">
+                          <svg class="button__arrow">
+                            <use xlink:href="images/svg/symbol/sprite.svg#arrow"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="feedback__company-wrapper"> 
+                  <div class="feedback__company">
+                    <div class="feedback__subtitle">Компания</div>
+                    <div class="feedback__company-name">Общество с ограниченной <br>   ответственностью «Евробудтрейд»</div>
+                    <div class="feedback__subtitle">Юридический адрес</div>
+                    <div class="feedback__adress">Украина, г. Киев, Киево-Святошинский р-н,<br> с. Чайки, ул. Антонова, 8 А</div>
+                    <div class="feedback__company-row"> 
+                      <div class="feedback__column">
+                        <div class="feedback__subtitle">ИНН</div>
+                        <div class="feedback__document">542325235</div>
+                      </div>
+                      <div class="feedback__column">
+                        <div class="feedback__subtitle">КПП</div>
+                        <div class="feedback__document">542325235</div>
+                      </div>
+                      <div class="feedback__column">
+                        <div class="feedback__subtitle">ОГРН</div>
+                        <div class="feedback__document">1121690089685</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
       <footer class="footer">
         <div class="container footer-container">
           <ul class="footer-row">

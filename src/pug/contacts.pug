@@ -1,7 +1,10 @@
-extends template/contacts
+extends template/main
 
 block variables
     - var title = 'Главная страница'
     - var pageClass = 'main_page'
 
 block content
+    include modules/feedback/navigation
+    include modules/feedback/feedback 
+

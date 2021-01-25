@@ -1,6 +1,6 @@
 @import 'header/header.scss';
 @import 'footer/footer.scss';
-@import 'feedback/feedback.scss';
+
 //
 @import 'template/template.scss';
 @import 'template/slick.scss';
@@ -18,3 +18,13 @@
 @import 'template/input.scss';
 @import 'template/textarea.scss';
 @import 'template/button.scss';
+//
+@import 'feedback/feedback.scss';
+@import 'feedback/navigation.scss';
+//
+@import 'engineering/hero.scss';
+@import 'engineering/engineering.scss';
+@import 'engineering/project.scss';
+@import 'engineering/design.scss';
+@import 'engineering/order.scss';
+@import 'engineering/cost.scss';
