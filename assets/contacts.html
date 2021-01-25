@@ -1,7 +1,4 @@
-<a class="more_btn" href="#"><span></span>
-  <svg>
-    <use xlink:href="images/svg/symbol/sprite.svg#more_btn"></use>
-  </svg></a><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
@@ -118,15 +115,20 @@
                 <div class="feedback__form-wrapper"> 
                   <form class="feedback__form">
                     <div class="feedback__input-wrapper">
-                      <input class="feedback__input-name input" placeholder="Анатолий Комаров" type="text">
-                      <input class="feedback__input-mail input" placeholder="ваш email" type="mail">
+                      <div class="input-name-wrapper feedback__name-wrapper">
+                        <input class="input" placeholder="Анатолий Комаров" type="text"/>
+                        <div class="input-name-decor">ФИО</div>
+                      </div>
+                      <div class="input-mail-wrapper feedback__mail-wrapper">
+                        <input class="input" placeholder="ваш email" type="mail"/>
+                      </div>
                     </div>
-                    <textarea class="feedback__textarea textarea" placeholder="cообщение"></textarea>
-                    <div class="feedback__condition-wrapper">
-                      <div class="feedback__condition">
-                        <label class="feedback__label label">
-                          <input class="feedback__checkbox" type="checkbox"><span class="feedback__custom-checkbox"></span>
-                        </label><span class="feedback__condition-text">Я принимаю условия <br><a href="#">пользовательского соглашения</a></span>
+                    <textarea class="textarea feedback__textarea" placeholder="cообщение"></textarea>
+                    <div class="condition-wrapper feedback__condition-wrapper">
+                      <div class="condition feedback__condition">
+                        <label class="condition-label label">
+                          <input class="condition-checkbox" type="checkbox"/><span class="condition-custom-checkbox"></span>
+                        </label><span class="feedback__condition-text feedback__condition-text">Я принимаю условия <br><a href="#">пользовательского соглашения</a></span>
                       </div>
                       <button class="button" type="submit">отправить
                         <div class="button__icon">
