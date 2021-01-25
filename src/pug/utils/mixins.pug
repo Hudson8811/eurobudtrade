@@ -105,3 +105,14 @@ mixin condition()
             span.feedback__condition-text Я принимаю условия <br>
                 a(href="#") пользовательского соглашения
         +blue_btn("отправить")
+a.more_btn(href="#")
+    span= title
+    svg
+        use(xlink:href='images/svg/symbol/sprite.svg#more_btn')
+
+mixin radio-input(name, title)
+    label.radio-input
+        input(type="radio", name=`${name}`)
+        b
+        i
+        span= title

@@ -1,0 +1,138 @@
+div(style="display: none;").quiz.quiz-1
+    .quiz-slider-wrapper
+        .quiz-slider.quiz-slider-1
+            div
+                .quiz-item
+                    .quiz-heading
+                        span Рассчет стоимости
+                        a(href="#") 
+                            +svg('#close-quiz')
+                    .quiz-content
+                        span.quiz-content-title Выберите услугу
+                        .quiz-c1
+                            .quiz-c1-item
+                                input(type="radio", name="pays")
+                                b.quiz-input
+                                +svg('#build')
+                                span Вентиляция
+
+                            .quiz-c1-item
+                                input(type="radio", name="pays")
+                                b.quiz-input
+                                +svg('#build')
+                                span Кондиционирование
+
+                            .quiz-c1-item
+                                input(type="radio", name="pays")
+                                b.quiz-input
+                                +svg('#build')
+                                span Отопление
+            div
+                .quiz-item
+                    .quiz-heading
+                        span Рассчет стоимости (шаг 2 из 6)
+                        a(href="#") 
+                            +svg('#close-quiz')
+                    .quiz-content
+                        span.quiz-content-title Где необходимо выполнить монтаж?
+                        .quiz-c2
+                            +radio-input('2', 'Жилой дом / квартира')
+                            +radio-input('2', 'Офис / бизнес-центр')
+                            +radio-input('2', 'Торговый центр / магазин')
+                            +radio-input('2', 'Ресторан / кафе / кальянная')
+                            +radio-input('2', 'Производство / склад')
+                            +radio-input('2', 'Отель / больница / мед. центр')
+                            +radio-input('2', 'Бассейн / спа / аква-парк')
+                            +radio-input('2', 'Спорткомплекс / фитнес-клуб')
+            
+            div
+                .quiz-item
+                    .quiz-heading
+                        span Рассчет стоимости (шаг 3 из 6)
+                        a(href="#") 
+                            +svg('#close-quiz')
+                    .quiz-content
+                        span.quiz-content-title Укажите площадь объекта
+                        .quiz-c2
+                            +radio-input('3', 'до 50 м2')
+                            +radio-input('3', 'от 50 до 100 м2')
+                            +radio-input('3', 'от 100 до 250 м2')
+                            +radio-input('3', 'от 250 до 500 м2')
+                            +radio-input('3', 'Свыше 500 м2')
+            
+            div
+                .quiz-item
+                    .quiz-heading
+                        span Рассчет стоимости (шаг 4 из 6)
+                        a(href="#") 
+                            +svg('#close-quiz')
+                    .quiz-content
+                        span.quiz-content-title Укажите высоту потолков
+                        .quiz-c2
+                            +radio-input('4', 'до 2 м')
+                            +radio-input('4', 'до 3 м')
+                            +radio-input('4', 'до 4 м')
+                            +radio-input('4', 'до 6 м')
+                            +radio-input('4', 'до 8 м')
+                            +radio-input('4', 'до 10 м')
+            
+            div
+                .quiz-item
+                    .quiz-heading
+                        span Рассчет стоимости (шаг 5 из 6)
+                        a(href="#") 
+                            +svg('#close-quiz')
+                    .quiz-content
+                        span.quiz-content-title Укажите тип вентиляции
+                        .quiz-c2
+                            +radio-input('5', 'Приточная')
+                            +radio-input('5', 'Вытяжная')
+                            +radio-input('5', 'Приточно-вытяжная')
+            div
+                .quiz-item
+                    .quiz-heading
+                        span Рассчет стоимости (шаг 6 из 6)
+                        a(href="#") 
+                            +svg('#close-quiz')
+
+                    .quiz-form-wrapper
+                        .quiz-form-info
+                            .quiz-form-info-title Стоимость вентиляции
+                            ul
+                                li Объект:
+                                    span офис / бизнес-центр
+                                li Площадь:
+                                    span  от 250 до 500 м2
+                                li Выс. Потолков:
+                                    span  до 4 м
+                                li Тип системы:
+                                    span  приточно-вытяжная
+                            .quiz-form-info-price Итого: #[span() 28 000 грн]
+                            p.quiz-form-info-desc Это приблизительная стоимость поставки оборудования и работ по монтажу на вашем объекте. Для более точного расчета необходимо отправить свои данные
+
+                        form.quiz-form
+                            .quiz-form-title Получить коммерческое предложение #[span() со скидкой 5%]
+                            label.application-form-label
+                                input(type="text")
+                                span ФИО
+
+                            label.application-form-label
+                                input(type="text", name="phone")
+                                span номер телефона
+
+                            label.application-form-label.application-form-label-for_file
+                                input(type="file")
+                                span Добавить файл
+                                p.application-form-file-name
+                                p.application-form-file-btn выбрать
+                            
+                            .application-form-submit
+                                .application-form-polic
+                                    label.application-form-polic-check
+                                        input(type="checkbox")
+                                        b
+                                    p Я принимаю условия #[a(href="#") пользоваського соглашения]
+                                button.calc-btn.quiz-1-submit
+                                    span отправить
+                                    +svg('#calc-arrow')
+        .quiz-tools.quiz-tools-1
