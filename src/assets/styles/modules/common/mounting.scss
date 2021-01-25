@@ -1,0 +1,58 @@
+.mounting {
+  position: relative;
+  box-sizing: border-box;
+  padding: 80px 0 60px;
+
+  &-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: -48px;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: calc(50% - 35px);
+    margin-bottom: 48px;
+    margin-right: 70px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  &-image {
+    display: block;
+    width: 162px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &-text {
+    box-sizing: border-box;
+    display: block;
+    padding-left: 32px;
+
+    a {
+      display: block;
+      margin-bottom: 24px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 135%;
+      text-decoration-line: underline;
+      color: #426cff;
+    }
+
+    P {
+      display: block;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 150%;
+      color: #6b7285;
+    }
+  }
+}

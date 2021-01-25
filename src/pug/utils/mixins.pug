@@ -74,3 +74,14 @@ mixin radio-input(name, title)
     b
     i
     span= title
+
+mixin blue_btn(title)
+  a.blue_btn(href="#")
+    span= title
+    +svg('#calc-arrow')
+
+mixin breadcroumbs(...items)
+  ul.breadcroumbs
+    each item in items
+      li
+        a(href="#")= item
