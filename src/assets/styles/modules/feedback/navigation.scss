@@ -8,11 +8,16 @@
     background-repeat: no-repeat;
 
     &__container {
-        margin-top: -67px;
+        padding-top: 35px;
     }
 
     &__map {
         position: relative;
+    }
+
+    &__map-wrapper {
+        position: relative;
+        padding-top: 169px;
     }
 
     &__img-wrapper {
@@ -47,4 +52,8 @@
         line-height: 150%;
         margin-bottom: 20px;
     }
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(0.7);
 }

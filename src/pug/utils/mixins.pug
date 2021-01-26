@@ -74,11 +74,11 @@ mixin blue_btn(text)
             svg.button__arrow
                 use(xlink:href='images/svg/symbol/sprite.svg#arrow')
 
-mixin project-card(title,desc)
-    .project__card
-        img.project__img(src="images/engineering/card-img.png")
-        .project__title= title
-        .project__desc= desc
+mixin pack-card(title,desc)
+    .pack__card
+        img.pack__img(src="images/engineering/card-img.png")
+        .pack__title= title
+        .pack__desc= desc
 
 mixin design-card(number,desc)
     .design__card-wrapper
@@ -97,27 +97,27 @@ mixin order-card(img,title,desc)
                 .order__card-desc= desc
 
 mixin radio-input(name, title)
-  label.radio-input
-    input(type="radio", name=`${name}`)
-    b
-    i
-    span= title
+    label.radio-input
+        input(type="radio", name=`${name}`)
+        b
+        i
+        span= title
 
 mixin blue_btn(title)
-  a.blue_btn(href="#")
-    span= title
-    +svg('#calc-arrow')
+    a.blue_btn(href="#")
+        span= title
+        +svg('#calc-arrow')
 
 mixin breadcroumbs(...items)
-  ul.breadcroumbs
-    each item in items
-      li
-        a(href="#")= item
+    ul.breadcroumbs
+        each item in items
+            li
+                a(href="#")= item
 
 mixin services-table-content(...items)
-  each item in items
-      td
-        div= item
+    each item in items
+        td
+            div= item
 
 mixin input-name(mod)
     .input-name-wrapper(class=`${mod}__name-wrapper`)
@@ -149,8 +149,8 @@ mixin condition(mod)
             label.condition-label.label
                 input.condition-checkbox(type="checkbox")
                 span.condition-custom-checkbox
-            span.feedback__condition-text(class=`${mod}__condition-text`) Я принимаю условия <br>
-                a(href="#") пользовательского соглашения
+            span.condition-text(class=`${mod}__condition-text`) Я принимаю условия <br>
+                a.condition-link(href="#") пользовательского соглашения
         +blue_btn("отправить")
             a.more_btn(href="#")
                 span= title

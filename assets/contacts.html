@@ -91,8 +91,11 @@
       <div class="site-content" id="content">
         <div class="content">
           <div class="navigation" style="background-image: url(images/index_banner/index_banner.png);">
+          <div class="map" style="background-image: url(images/index_banner/index_banner.png);">
             <div class="container navigation__container">
               <div class="navigation__img-wrapper"><img class="navigation__map" src="images/contacts/map.jpg">
+              <div class="navigation__img-wrapper">
+                <div class="map" id="map" style="width:1240px;height:639px;"></div>
                 <div class="navigation__content">
                   <div class="navigation__subtitle">Контакты</div>
                   <div class="navigation__tel">+38 (044) 3642970</div>
@@ -110,6 +113,7 @@
                 <div class="feedback__feedback-wrapper">
                   <div class="feedback__feedback">обратная <a href="">связь</a></div>
                   <div class="feedback__decor"></div>
+                  <div class="section_title"><span>обратная <span>связь</span></span></div>
                 </div>
               </div>
               <div class="feedback__row">
@@ -129,7 +133,7 @@
                       <div class="condition feedback__condition">
                         <label class="condition-label label">
                           <input class="condition-checkbox" type="checkbox"/><span class="condition-custom-checkbox"></span>
-                        </label><span class="feedback__condition-text feedback__condition-text">Я принимаю условия <br><a href="#">пользовательского соглашения</a></span>
+                        </label><span class="condition-text feedback__condition-text">Я принимаю условия <br><a class="condition-link" href="#">пользовательского соглашения</a></span>
                       </div><a class="blue_btn" href="#"><span>отправить</span>
                         <svg>
                           <use xlink:href="images/svg/symbol/sprite.svg#calc-arrow"></use>
@@ -632,5 +636,7 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a6470789-2472-438c-a958-ca1bc6b9cdf4&amp;lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

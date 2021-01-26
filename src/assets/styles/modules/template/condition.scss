@@ -58,4 +58,13 @@
         }
     }
 
+    &-text {
+        font-size: 14px;
+        line-height: 120%;
+    }
+
+    &-link {
+        color: #0000FF;
+        text-decoration: underline;
+    }
 }
