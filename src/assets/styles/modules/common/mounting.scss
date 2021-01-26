@@ -3,15 +3,25 @@
   box-sizing: border-box;
   padding: 80px 0 60px;
 
+  @include respond-to('tablet-middle') {
+    padding: 32px 0;
+  }
+
   &-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
     flex-wrap: wrap;
     margin-bottom: -48px;
+
+    @include respond-to('tablet-middle') {
+      display: block;
+      margin-bottom: -16px;
+    }
   }
 
   &-item {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
@@ -22,6 +32,13 @@
     &:nth-child(2n) {
       margin-right: 0;
     }
+
+    @include respond-to('tablet-middle') {
+      width: 100%;
+      margin-bottom: 16px;
+      margin-right: 0;
+      height: 209px;
+    }
   }
 
   &-image {
@@ -30,6 +47,11 @@
     flex-shrink: 0;
     object-fit: cover;
     object-position: center;
+
+    @include respond-to('tablet-middle') {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &-text {
@@ -53,6 +75,29 @@
       font-size: 15px;
       line-height: 150%;
       color: #6b7285;
+    }
+
+    @include respond-to('tablet-middle') {
+      position: absolute;
+      left: 4px;
+      bottom: 4px;
+      width: calc(100% - 8px);
+      background: #f4f4f4;
+
+      a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 0;
+        min-height: 69px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 135%;
+      }
+
+      p {
+        display: none;
+      }
     }
   }
 }

@@ -3,9 +3,18 @@
   box-sizing: border-box;
   padding: 60px 0;
 
+  @include respond-to('tablet-wide') {
+    padding: 32px 0;
+  }
+
   &-container {
     text-align: right;
     margin-bottom: 50px;
+
+    @include respond-to('tablet-wide') {
+      text-align: left;
+      margin-bottom: 32px;
+    }
   }
 
   &-item {

@@ -1,31 +1,31 @@
 .project {
-    padding-top: 120px;
+  padding-top: 120px;
 
-    &__row {
-        padding-top: 45px;
-        display: flex;
-    }
+  &__row {
+    padding-top: 45px;
+    display: flex;
+  }
 
-    &__card {
-        flex-basis: 25%;
-    }
+  &__card {
+    flex-basis: 25%;
+  }
 
-    &__img {
-        margin-bottom: 15px;
-    }
+  &__img {
+    margin-bottom: 15px;
+  }
 
-    &__title {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 135%;
-        color: #262C36;
-        margin-bottom: 5px;
-    }
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 135%;
+    color: #262c36;
+    margin-bottom: 5px;
+  }
 
-    &__desc {
-        font-size: 15px;
-        line-height: 150%;
-        color: #6B7285;
-        max-width: 250px;
-    }
+  &__desc {
+    font-size: 15px;
+    line-height: 150%;
+    color: #6b7285;
+    max-width: 250px;
+  }
 }

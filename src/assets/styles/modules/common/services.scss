@@ -3,8 +3,16 @@
   box-sizing: border-box;
   padding: 60px 0;
 
+  @include respond-to('tablet-middle') {
+    padding: 32px 0;
+  }
+
   &-container {
     margin-bottom: 50px;
+
+    @include respond-to('tablet-middle') {
+      margin-bottom: 30px;
+    }
   }
 
   &-table {
@@ -17,6 +25,18 @@
     tr {
       border-bottom: 1px solid #e1e5ed;
 
+      @include respond-to('tablet-middle') {
+        border: none;
+
+        &:nth-child(2n) {
+          background: #f4f4f4;
+        }
+
+        &:nth-child(2n + 1) {
+          background: #fbfbfb;
+        }
+      }
+
       &:first-child {
         border: none;
       }
@@ -24,6 +44,11 @@
       td {
         &:nth-child(1) {
           width: 101px;
+
+          @include respond-to('tablet-middle') {
+            width: 37px;
+            vertical-align: middle;
+          }
         }
 
         &:nth-child(2) {
@@ -34,6 +59,16 @@
 
         &:nth-child(3) {
           width: 194px;
+
+          @include respond-to('tablet-middle') {
+            width: 60px;
+            vertical-align: middle;
+
+            div {
+              text-align: right;
+              justify-content: flex-end;
+            }
+          }
         }
 
         &:nth-child(4) {
@@ -42,6 +77,20 @@
           div {
             &:after {
               display: none;
+            }
+          }
+
+          @include respond-to('tablet-middle') {
+            width: 56px;
+            vertical-align: middle;
+
+            div {
+              padding-right: 16px;
+
+              &:before {
+                content: '/';
+                padding-right: 5px;
+              }
             }
           }
         }
@@ -56,6 +105,10 @@
       align-items: center;
       height: 56px;
       padding: 0 24px;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 135%;
+      color: #262c36;
 
       &:after {
         content: '';
@@ -67,10 +120,24 @@
         height: calc(100% - 32px);
         background: #e1e5ed;
       }
+
+      @include respond-to('tablet-middle') {
+        min-height: 40px;
+        height: auto;
+        padding: 5px 0;
+
+        &:after {
+          display: none;
+        }
+      }
     }
 
     &-heading {
       background: #f4f4f4;
+
+      @include respond-to('tablet-middle') {
+        display: none;
+      }
 
       div {
         height: 64px;
@@ -92,6 +159,11 @@
     margin-top: 26px;
     background: #f4f4f4;
 
+    @include respond-to('tablet-middle') {
+      display: block;
+      background-color: transparent;
+    }
+
     &-text {
       box-sizing: border-box;
       padding: 25px 25px 25px 32px;
@@ -99,6 +171,11 @@
       flex-grow: 1;
       justify-content: flex-start;
       align-items: center;
+
+      @include respond-to('tablet-middle') {
+        padding: 0;
+        justify-content: center;
+      }
 
       p {
         box-sizing: border-box;
@@ -110,6 +187,10 @@
         font-size: 14px;
         line-height: 150%;
         color: #262c36;
+
+        @include respond-to('tablet-middle') {
+          display: none;
+        }
       }
     }
 
@@ -126,6 +207,10 @@
         display: block;
         width: 35px;
         height: 36px;
+      }
+
+      @include respond-to('tablet-middle') {
+        display: none;
       }
     }
   }

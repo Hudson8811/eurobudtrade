@@ -8,6 +8,11 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    @include respond-to('tablet-middle') {
+      padding: 82px 20px 64px;
+      text-align: center;
+    }
   }
 
   h2 {
@@ -18,5 +23,14 @@
     font-size: 40px;
     line-height: 135%;
     color: #ffffff;
+
+    @include respond-to('tablet-middle') {
+      max-width: none;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 125%;
+      text-align: center;
+      margin-bottom: 60px;
+    }
   }
 }

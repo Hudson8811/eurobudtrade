@@ -399,6 +399,7 @@ body {
   span {
     display: block;
     padding-right: 19px;
+    text-align: left;
   }
 
   svg {
@@ -412,6 +413,10 @@ body {
   .site-content {
     box-sizing: border-box;
     padding-top: 137px;
+
+    @include respond-to('desktop') {
+      padding-top: 71px;
+    }
   }
 
   .header {
@@ -425,6 +430,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 
   li {
     display: flex;
@@ -446,6 +452,10 @@ body {
       line-height: 135%;
       color: #262c36;
       text-decoration: none;
+
+      @include respond-to('tablet-middle') {
+        font-size: 13px;
+      }
     }
 
     &:last-child {
@@ -471,4 +481,8 @@ body {
   span {
     bottom: 70%;
   }
+}
+
+.wrapper {
+  position: relative;
 }

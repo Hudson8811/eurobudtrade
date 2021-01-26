@@ -1,0 +1,83 @@
+.quiz.quiz-2 {
+  .cl_form {
+    position: static;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    @include respond-to('desktop') {
+      display: block;
+    }
+
+    &:before {
+      content: '';
+      z-index: 0;
+      position: absolute;
+      left: 0;
+      top: 72px;
+      width: 100%;
+      height: calc(100% - 72px);
+      background: #f4f4f4;
+    }
+
+    .application-form-label {
+      background-color: #fff;
+    }
+  }
+
+  .application-form-submit {
+    position: absolute;
+    max-width: 411px;
+    width: 100%;
+    right: 80px;
+    bottom: 48px;
+
+    @include respond-to('desktop') {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      width: 100%;
+
+      .calc-btn {
+        display: none;
+      }
+    }
+  }
+
+  .quiz-2-wrap {
+    width: calc(50% - 12px);
+
+    @include respond-to('desktop') {
+      width: 100%;
+    }
+
+    & + .quiz-2-wrap {
+      margin-left: 24px;
+
+      @include respond-to('desktop') {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+
+    .application-form-label-textarea {
+      height: 100%;
+
+      @include respond-to('desktop') {
+        height: 107px;
+      }
+    }
+
+    .application-form-label:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .quiz-form-title {
+    position: relative;
+    z-index: 2;
+  }
+}
