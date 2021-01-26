@@ -4,10 +4,18 @@
   padding: 127px 0 60px;
   overflow: hidden;
 
+  @include respond-to('tablet-middle') {
+    padding: 32px 0;
+  }
+
   &-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+
+    @include respond-to('tablet-middle') {
+      display: block;
+    }
   }
 
   &-desc {
@@ -16,6 +24,12 @@
     padding-right: 20px;
     margin-right: auto;
 
+    @include respond-to('tablet-middle') {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+
     h2 {
       display: block;
       margin: 52px 0 50px;
@@ -23,6 +37,13 @@
       font-size: 40px;
       line-height: 135%;
       color: #262c36;
+
+      @include respond-to('tablet-middle') {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 135%;
+        margin: 33px 0 24px;
+      }
     }
 
     p {
@@ -32,6 +53,9 @@
       font-size: 15px;
       line-height: 180%;
       color: #6b7285;
+
+      @include respond-to('tablet-middle') {
+      }
     }
   }
 
@@ -43,6 +67,10 @@
     align-items: stretch;
     flex-wrap: wrap;
 
+    @include respond-to('tablet-middle') {
+      width: 100%;
+    }
+
     &:after {
       content: '';
       position: absolute;
@@ -53,6 +81,10 @@
       width: 80vw;
       height: calc(100% + 127px);
       background: #f4f4f4;
+
+      @include respond-to('tablet-middle') {
+        display: none;
+      }
     }
   }
 
@@ -81,6 +113,27 @@
     img {
       display: block;
       max-width: 90%;
+    }
+
+    @include respond-to('tablet-middle') {
+      height: 101px;
+      width: 50%;
+      background: #f4f4f4;
+      border: 1px solid #e1e5ed;
+      border-bottom-width: 0;
+
+      &:nth-child(2n) {
+        border-left-width: 0;
+      }
+
+      &:nth-last-child(1),
+      &:nth-last-child(2) {
+        border-bottom-width: 1px;
+      }
+
+      img {
+        max-width: 70%;
+      }
     }
   }
 }

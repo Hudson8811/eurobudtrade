@@ -7,9 +7,20 @@
   background-position: center center;
   background-repeat: no-repeat;
 
+  @include respond-to('tablet-middle') {
+    margin: 32px 0 0;
+
+    padding: 48px 0 127px;
+  }
+
   &-container {
     text-align: right;
     margin-bottom: 50px;
+
+    @include respond-to('tablet-middle') {
+      margin-bottom: 40px;
+      text-align: left;
+    }
 
     .section_title > span {
       color: #fff;
@@ -25,6 +36,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 62px;
+
+    @include respond-to('tablet-middle') {
+      margin-bottom: 0;
+    }
   }
 
   &-icon {
@@ -58,6 +73,56 @@
       font-size: 15px;
       line-height: 150%;
       color: #ffffff;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 302px;
+    margin: 48px auto 0;
+
+    button {
+      position: relative;
+      border: none;
+      padding: 0;
+      margin: 0;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #9da4b5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      background: #4b576d;
+      cursor: pointer;
+    }
+
+    .slick-active {
+      button {
+        background: #d4d7de;
+        font-size: 15px;
+        line-height: 150%;
+        color: #262c36;
+
+        &:before {
+          box-sizing: border-box;
+          content: '';
+          position: absolute;
+          display: block;
+          width: 31px;
+          height: 31px;
+          border: 1px solid #d4d7de;
+          border-radius: 50%;
+        }
+      }
     }
   }
 }

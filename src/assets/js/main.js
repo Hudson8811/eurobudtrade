@@ -30,21 +30,38 @@ $(document).ready(function () {
         verticalSwiping: true,
         appendArrows: $('.project-tools'),
         appendDots: $('.project-tools'),
+        responsive: [
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+              arrows: true,
+              vertical: false,
+              verticalSwiping: false,
+            }
+          }
+        ]
       });
 
-      $(".facts-slider").slick({
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        rows: 2,
-        arrows: false,
-        dots: false,
-      });
 
       $(".articles-slider").slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         arrows: false,
         dots: false,
+        responsive: [
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+            }
+          }
+        ]
       });
 
       var quiz1Trigger = false;
@@ -67,6 +84,7 @@ $(document).ready(function () {
                   prevArrow: '<div class="quiz-arrow quiz-prev-arrow"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.61401 1L1.99998 7.61403L8.61401 14.2281" stroke="#D4D7DE" stroke-width="2"/></svg><span>назад</span></div>',
                   nextArrow: '<div class="quiz-arrow quiz-next-arrow"><span>Далее</span><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.61401 1L13.228 7.61403L6.61401 14.2281" stroke="white" stroke-width="2"/></svg></div>',
                   appendArrows: $('.quiz-tools-1'),
+                  adaptiveHeight: true
                 });
                 quiz1Trigger = true;
               }
@@ -95,6 +113,7 @@ $(document).ready(function () {
                   prevArrow: '<div class="quiz-arrow quiz-prev-arrow"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.61401 1L1.99998 7.61403L8.61401 14.2281" stroke="#D4D7DE" stroke-width="2"/></svg><span>назад</span></div>',
                   nextArrow: '<div class="quiz-arrow quiz-next-arrow"><span>Далее</span><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.61401 1L13.228 7.61403L6.61401 14.2281" stroke="white" stroke-width="2"/></svg></div>',
                   appendArrows: $('.quiz-tools-2'),
+                  adaptiveHeight: true
                 });
                 quiz2Trigger = true;
               }
@@ -205,5 +224,89 @@ $(document).ready(function () {
           $this.siblings('.header-sub_menu_content').slideUp();
         }
       });
+
+      $('.objects-title').click(function(e){
+        e.preventDefault();
+        const $this = $(this);
+        if(!$this.hasClass('is-active')){
+          $('.objects-item').removeClass('is-active');
+          $('.objects-title').removeClass('is-active');
+          $this.addClass('is-active');
+          $this.parents('.objects-item').addClass('is-active');
+        } else{
+          $this.removeClass('is-active');
+          $this.parents('.objects-item').removeClass('is-active');
+        }
+      });
+
+      var factsMobile = false;
+      var factsDesktop = false;
+      function facts(){
+        if($(window).width() < 901 && !factsMobile){
+          if($('.facts-slider').hasClass('slick-initialized')){
+            $(".facts-slider").slick('unslick');
+            $(".facts-slider").slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              rows: 1,
+              arrows: false,
+              dots: true,
+            });
+
+            factsMobile = true;
+            factsDesktop = false;
+            
+          } else{
+            
+            $(".facts-slider").slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              rows: 1,
+              arrows: false,
+              dots: true,
+            });
+            factsMobile = true;
+            factsDesktop = false;
+            
+          }
+
+          
+        } else if($(window).width() > 900 && !factsDesktop){
+         
+          if($('.facts-slider').hasClass('slick-initialized')){
+            $(".facts-slider").slick('unslick');
+            $(".facts-slider").slick({
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              rows: 2,
+              arrows: false,
+              dots: false,
+            });
+
+            factsDesktop = true;
+            factsMobile = false;
+            
+          } else{
+            $(".facts-slider").slick({
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              rows: 2,
+              arrows: false,
+              dots: false,
+            });
+            factsDesktop = true;
+            factsMobile = false;
+            
+          }
+
+          
+        }
+      }
+
+      facts();
+
+      $(window).resize(function(){
+        facts();
+      })
 });
 

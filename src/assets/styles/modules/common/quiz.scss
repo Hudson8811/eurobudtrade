@@ -9,6 +9,16 @@
       max-width: 1006px;
       width: 1006px;
       margin: 0 auto;
+
+      @include respond-to('desktop') {
+        max-width: 345px;
+        width: 345px;
+      }
+
+      @include respond-to('phone-wide') {
+        width: 280px;
+        max-width: 280px;
+      }
     }
   }
 
@@ -46,6 +56,19 @@
         height: 100%;
       }
     }
+
+    @include respond-to('desktop') {
+      min-height: 48px;
+      padding: 0 16px 0 20px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 135%;
+
+      a {
+        width: 15px;
+        height: 15px;
+      }
+    }
   }
 
   &-content {
@@ -54,6 +77,10 @@
     padding: 40px 80px 136px;
     background: #ffffff;
 
+    @include respond-to('desktop') {
+      padding: 16px 20px 88px;
+    }
+
     &-title {
       display: block;
       margin-bottom: 32px;
@@ -61,6 +88,12 @@
       font-size: 20px;
       line-height: 135%;
       color: #262c36;
+
+      @include respond-to('desktop') {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 135%;
+      }
     }
   }
 
@@ -72,6 +105,21 @@
     justify-content: flex-start;
     align-items: stretch;
     width: 274px;
+
+    @include respond-to('desktop') {
+      left: 20px;
+      bottom: 24px;
+      width: 305px;
+    }
+
+    @include respond-to('phone-wide') {
+      width: 240px;
+
+      .quiz-arrow {
+        width: 100px;
+        padding: 0 10px;
+      }
+    }
   }
 
   &-arrow {
@@ -132,6 +180,10 @@
 
     &.slick-disabled {
       opacity: 0;
+
+      @include respond-to('desktop') {
+        opacity: 1;
+      }
     }
   }
 
@@ -141,12 +193,23 @@
     align-items: stretch;
     width: 100%;
 
+    @include respond-to('desktop') {
+      display: block;
+    }
+
     &-item {
       position: relative;
       box-sizing: border-box;
       width: calc(33.333% - 48px / 3);
       padding: 24px 50px 7px;
       background: #f4f4f4;
+
+      @include respond-to('desktop') {
+        width: 100%;
+        & + & {
+          margin-top: 15px;
+        }
+      }
 
       svg {
         display: block;
@@ -221,12 +284,23 @@
     flex-wrap: wrap;
     margin-bottom: -16px;
 
+    @include respond-to('desktop') {
+      display: block;
+      margin-bottom: -8px;
+    }
+
     .radio-input {
       width: calc(50% - 12px);
       margin-bottom: 16px;
       margin-right: 24px;
 
       &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      @include respond-to('desktop') {
+        width: 100%;
+        margin-bottom: 8px;
         margin-right: 0;
       }
     }
@@ -238,6 +312,11 @@
     width: 50%;
     padding: 40px 80px 118px 40px;
     background: #f4f4f4;
+
+    @include respond-to('desktop') {
+      width: 100%;
+      padding: 23px 20px 24px;
+    }
 
     &-title {
       display: block;
@@ -251,18 +330,32 @@
       span {
         color: #426cff;
       }
+
+      @include respond-to('desktop') {
+        font-size: 16px;
+        line-height: 135%;
+      }
     }
 
     &-wrapper {
       display: flex;
       justify-content: flex-start;
       align-items: stretch;
+
+      @include respond-to('desktop') {
+        display: block;
+      }
     }
 
     &-info {
       box-sizing: border-box;
       width: 50%;
       padding: 40px 49px 118px 80px;
+
+      @include respond-to('desktop') {
+        width: 100%;
+        padding: 16px 20px 32px;
+      }
 
       &-title {
         display: block;
@@ -272,6 +365,11 @@
         font-size: 20px;
         line-height: 135%;
         color: #262c36;
+
+        @include respond-to('desktop') {
+          font-size: 16px;
+          line-height: 135%;
+        }
       }
 
       ul {
@@ -284,6 +382,10 @@
           font-size: 16px;
           line-height: 135%;
           color: #6b7285;
+
+          @include respond-to('desktop') {
+            font-size: 15px;
+          }
 
           & + li {
             margin-top: 8px;
@@ -306,6 +408,10 @@
         span {
           color: #426cff;
         }
+
+        @include respond-to('desktop') {
+          font-size: 16px;
+        }
       }
 
       &-desc {
@@ -322,6 +428,18 @@
       left: 40px;
       bottom: 48px;
       width: calc(100% - 40px - 80px);
+
+      @include respond-to('desktop') {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 100%;
+        margin: 24px 0 74px;
+
+        .calc-btn {
+          display: none;
+        }
+      }
     }
   }
 }

@@ -12,6 +12,7 @@ function init(){
         zoom: 13,
 
         controls: []
+
     });
     // Создание геообъекта с типом точка (метка).
     var myGeoObject = new ymaps.GeoObject({

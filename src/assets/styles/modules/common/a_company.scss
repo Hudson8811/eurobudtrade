@@ -79,7 +79,7 @@
 
     @include respond-to('tablet-wide') {
       position: absolute;
-      bottom: 282px;
+      bottom: 314px;
       left: 50%;
       max-width: 345px;
       width: 100%;
@@ -95,7 +95,7 @@
     margin-top: 73px;
 
     @include respond-to('tablet-wide') {
-      padding-top: 325px;
+      padding-top: 305px;
       flex-wrap: wrap;
     }
   }
@@ -122,6 +122,15 @@
         margin-right: 0;
       }
     }
+
+    @include respond-to('phone-wide') {
+      width: calc(50% - 30px);
+      margin-right: 30px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
   }
 
   &-number {
@@ -139,6 +148,7 @@
 
   &-desc {
     display: block;
+    max-width: 150px;
     font-weight: normal;
     font-size: 15px;
     line-height: 150%;
