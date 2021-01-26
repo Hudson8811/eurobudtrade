@@ -3,8 +3,16 @@
 
     &__container {
         margin-bottom: 24px;
-        padding: 100px;
+        padding-top: 105px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 81px;
+        // padding: 100px;
         box-sizing: border-box;
+
+        @include respond-to('tablet-small') {
+            padding: 80px;
+        }
     }
 
     &__title {
@@ -14,7 +22,12 @@
         font-size: 40px;
         line-height: 135%;
         color: #FFFFFF;
-        margin-bottom: 102px;
+        margin-bottom: 89px;
+
+        @include respond-to('tablet-wide') {
+            text-align: center;
+
+        }
     }
 
     &__nav {
@@ -24,6 +37,10 @@
 
     &__nav-item {
         padding: 0 10px;
+
+        &:first-child {
+            padding-left: 0;
+        }
     }
 
     &__decor {
