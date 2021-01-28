@@ -1,18 +1,51 @@
 .pack {
     padding-top: 120px;
 
+    @include respond-to('phablet') {
+        padding-top: 60px;
+
+    }
+
+    @include respond-to('phablet') {
+        padding-top: 60px;
+    }
+
     &__row {
         padding-top: 45px;
         display: flex;
+        margin: -15px;
+
+        @include respond-to('tablet-wide') {
+            flex-wrap: wrap;
+        }
     }
 
     &__card {
         flex-basis: 25%;
+        padding: 15px;
+
+        @include respond-to('tablet-wide') {
+            flex-basis: 50%;
+        }
+
+        @include respond-to('phablet') {
+            display: flex;
+            flex-basis: 100%;
+        }
     }
 
     &__img {
         margin-bottom: 15px;
+
+        @include respond-to('phablet') {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            margin-bottom: 0;
+        }
     }
+
+    &__card-content {}
 
     &__title {
         font-weight: 500;
@@ -20,6 +53,10 @@
         line-height: 135%;
         color: #262c36;
         margin-bottom: 5px;
+
+        @include respond-to('phablet') {
+            font-size: 15px;
+        }
     }
 
     &__desc {
@@ -27,5 +64,9 @@
         line-height: 150%;
         color: #6b7285;
         max-width: 250px;
+
+        @include respond-to('phablet') {
+            max-width: 100%;
+        }
     }
 }

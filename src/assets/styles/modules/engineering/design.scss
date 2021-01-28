@@ -1,6 +1,11 @@
 .design {
     padding-top: 94px;
 
+    @include respond-to('phablet') {
+        padding-top: 60px;
+
+    }
+
     &__row {
         display: flex;
         flex-wrap: wrap;
@@ -11,6 +16,14 @@
     &__card-wrapper {
         width: 33.3%;
         padding: 10px;
+
+        @include respond-to('tablet-wide') {
+            flex-basis: 50%;
+        }
+
+        @include respond-to('tablet-wide') {
+            flex-basis: 100%;
+        }
     }
 
     &__card {
@@ -43,6 +56,10 @@
         line-height: 125%;
         color: #323340;
         width: 80%;
+
+        @include respond-to('tablet-wide') {
+            width: 100%;
+        }
     }
 
     &__decor {

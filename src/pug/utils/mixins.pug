@@ -68,8 +68,8 @@ mixin arrow_btn(title)
         svg
             use(xlink:href='images/svg/symbol/sprite.svg#more_btn')
 
-mixin blue_btn(text) 
-    button.button(type="submit")= text
+mixin form_btn(text, mod) 
+    button.button(type="submit" class=`${mod}__button`)= text
         .button__icon
             svg.button__arrow
                 use(xlink:href='images/svg/symbol/sprite.svg#arrow')
@@ -77,8 +77,9 @@ mixin blue_btn(text)
 mixin pack-card(title,desc)
     .pack__card
         img.pack__img(src="images/engineering/card-img.png")
-        .pack__title= title
-        .pack__desc= desc
+        .pack__card-content
+            .pack__title= title
+            .pack__desc= desc
 
 mixin design-card(number,desc)
     .design__card-wrapper
@@ -151,7 +152,6 @@ mixin condition(mod)
                 span.condition-custom-checkbox
             span.condition-text(class=`${mod}__condition-text`) Я принимаю условия <br>
                 a.condition-link(href="#") пользовательского соглашения
-        +blue_btn("отправить")
-            a.more_btn(href="#")
-                span= title
-                +svg("more_btn")
+        +form_btn("отправить",`${mod}`)
+        button(type="submit" class=`hidden-button ${mod}__button`) оформить заявку
+

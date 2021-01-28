@@ -1,6 +1,10 @@
 .engineering {
     padding-top: 80px;
 
+    @include respond-to('phablet') {
+        padding-top: 32px;
+    }
+
     &__title {
         font-style: normal;
         font-weight: 500;
@@ -8,6 +12,10 @@
         line-height: 135%;
         color: #262C36;
         margin-bottom: 32px;
+
+        @include respond-to('phablet') {
+            font-size: 24px;
+        }
     }
 
     &__desc {
@@ -17,5 +25,13 @@
         line-height: 150%;
         color: #6B7285;
         max-width: 960px;
+
+        @include respond-to('tablet-wide') {
+            max-width: 560px;
+        }
+
+        @include respond-to('phablet') {
+            max-width: 100%;
+        }
     }
 }

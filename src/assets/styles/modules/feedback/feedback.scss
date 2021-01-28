@@ -27,7 +27,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include respond-to('tablet-wide') {
+        @include respond-to('tablet') {
             flex-direction: column;
         }
 
@@ -108,10 +108,14 @@
         background: #F4F4F4;
         margin-right: 20px;
 
-        @include respond-to('tablet-wide') {
+        @include respond-to('tablet') {
             margin-right: 0;
             margin-bottom: 30px;
 
+        }
+
+        @include respond-to('desktop') {
+            padding: 35px;
         }
 
         @include respond-to('tablet-small') {
@@ -176,8 +180,8 @@
         display: flex;
         justify-content: space-between;
 
-        @include respond-to('tablet-small') {
-            flex-direction: column;
+        @include respond-to('tablet-middle') {
+            flex-direction: column-reverse;
             align-items: end;
         }
     }
@@ -186,8 +190,8 @@
         display: flex;
         align-items: center;
 
-        @include respond-to('tablet-small') {
-            margin-bottom: 20px;
+        @include respond-to('tablet-middle') {
+            margin-top: 20px;
         }
     }
 
@@ -224,11 +228,18 @@
     }
 
     &__condition-text {
-        padding-left: 16px;
+        padding-right: 10px;
     }
 
     &__more {
         padding-left: 8px;
+    }
+
+    &__button {
+        @include respond-to('tablet-middle') {
+            width: 100%;
+            justify-content: center;
+        }
     }
 
     &__company-wrapper {
@@ -239,6 +250,10 @@
         padding-bottom: 48px;
         padding-left: 56px;
         background: #F4F4F4;
+
+        @include respond-to('desktop') {
+            padding: 35px;
+        }
 
         @include respond-to('tablet-small') {
             padding: 20px;

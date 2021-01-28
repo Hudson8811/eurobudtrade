@@ -10,8 +10,13 @@
         // padding: 100px;
         box-sizing: border-box;
 
-        @include respond-to('tablet-small') {
+        @include respond-to('tablet-wide') {
+            text-align: center;
             padding: 80px;
+        }
+
+        @include respond-to('phablet') {
+            padding: 40px;
         }
     }
 
@@ -23,16 +28,23 @@
         line-height: 135%;
         color: #FFFFFF;
         margin-bottom: 89px;
+        width: 56%;
 
         @include respond-to('tablet-wide') {
+            width: 100%;
             text-align: center;
+        }
 
+        @include respond-to('phablet') {
+            font-size: 24px;
+            margin-bottom: 70px;
         }
     }
 
     &__nav {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__nav-item {
