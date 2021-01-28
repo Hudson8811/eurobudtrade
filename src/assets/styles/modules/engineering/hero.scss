@@ -48,16 +48,36 @@
     }
 
     &__nav-item {
-        padding: 0 10px;
+        position: relative;
+        margin-right: 20px;
 
         &:first-child {
             padding-left: 0;
         }
+
+        &:not(:last-child) {
+            &::before {
+                content: "/";
+                position: absolute;
+                right: -15px;
+            }
+        }
+
     }
 
-    &__decor {
-        &::before {
-            content: "/";
+    &__nav-link {
+        transition: opacity 0.4s ease;
+
+        &:hover {
+            opacity: 0.6;
         }
     }
+
+    // &__decor {
+    //     &::before {
+    //         content: "/";
+    //         position: absolute;
+    //         right: 10px;
+    //     }
+    // }
 }

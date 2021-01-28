@@ -91,7 +91,7 @@
       <div class="site-content" id="content">
         <div class="content">
           <section class="hero">
-            <div class="container hero__container" style="background-image: url(images/index_banner/index_banner.png);">
+            <div class="container hero__container" style="background-image: url(images/engineering/hero-bg.jpg);">
               <h2 class="hero__title">Проектирование cистем вентиляции</h2>
               <div class="button-wrapper"><a class="blue_btn" href="#"><span>заказать проект</span>
                   <svg>
@@ -101,11 +101,9 @@
             </div>
             <div class="container">
               <ul class="hero__nav"> 
-                <li class="hero__nav-item">Главная </li>
-                <li class="hero__decor">   </li>
-                <li class="hero__nav-item">Типовые проекты</li>
-                <li class="hero__decor">   </li>
-                <li class="hero__nav-item">Магазины и торговые центры</li>
+                <li class="hero__nav-item"> <a class="hero__nav-link" href="">Главная </a></li>
+                <li class="hero__nav-item"> <a class="hero__nav-link" href="">Типовые проекты</a></li>
+                <li class="hero__nav-item"> <a class="hero__nav-link" href="">Магазины и торговые центры</a></li>
               </ul>
             </div>
           </section>
@@ -289,14 +287,15 @@
                 <form class="cost__form">
                   <div class="cost__form-content">
                     <div class="cost__input-wrapper">
-                      <div class="input-name-wrapper cost__name-wrapper">
-                        <input class="input" placeholder="Анатолий Комаров" type="text"/>
-                        <div class="input-name-decor">ФИО</div>
-                      </div>
-                      <div class="input-group cost__input-group"> 
-                        <input class="input cost__input-mail" placeholder="email адрес" type="mail"/>
-                        <input class="input cost__input-tel" placeholder="номер телефона" type="tel"/>
-                      </div>
+                      <label class="application-form-label">
+                        <input type="text"/><span>ФИО</span>
+                      </label>
+                      <label class="application-form-label">
+                        <input type="email"/><span>email адрес</span>
+                      </label>
+                      <label class="application-form-label">
+                        <input type="text"/><span>номер телефона</span>
+                      </label>
                       <label class="application-form-label application-form-label-for_file cost__form-file-label">
                         <input type="file"/><span>Добавить файл</span>
                         <p class="application-form-file-name"></p>
@@ -304,7 +303,9 @@
                       </label>
                     </div>
                     <div class="cost__textarea-wrapper">
-                      <textarea class="textarea cost__textarea" placeholder="cообщение"></textarea>
+                      <label class="application-form-label application-form-label-textarea cost__textarea">
+                        <textarea></textarea><span>Сообщение</span>
+                      </label>
                     </div>
                   </div>
                   <div class="condition-wrapper cost__condition-wrapper">
@@ -320,7 +321,6 @@
                         </svg>
                       </div>
                     </button>
-                    <button class="hidden-button cost__button" type="submit">оформить заявку</button>
                   </div>
                 </form>
               </div>

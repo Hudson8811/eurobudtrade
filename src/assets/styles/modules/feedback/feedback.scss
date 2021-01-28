@@ -128,7 +128,6 @@
 
     &__input-wrapper {
         display: flex;
-        margin-bottom: 20px;
 
         @include respond-to('desktop') {
             flex-direction: column;

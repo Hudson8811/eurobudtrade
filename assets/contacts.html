@@ -117,15 +117,16 @@
                 <div class="feedback__form-wrapper"> 
                   <form class="feedback__form">
                     <div class="feedback__input-wrapper">
-                      <div class="input-name-wrapper feedback__name-wrapper">
-                        <input class="input" placeholder="Анатолий Комаров" type="text"/>
-                        <div class="input-name-decor">ФИО</div>
-                      </div>
-                      <div class="input-mail-wrapper feedback__mail-wrapper">
-                        <input class="input" placeholder="ваш email" type="mail"/>
-                      </div>
+                      <label class="application-form-label">
+                        <input type="text"/><span>ФИО</span>
+                      </label>
+                      <label class="application-form-label">
+                        <input type="email"/><span>email адрес</span>
+                      </label>
                     </div>
-                    <textarea class="textarea feedback__textarea" placeholder="cообщение"></textarea>
+                    <label class="application-form-label application-form-label-textarea feedback__textarea">
+                      <textarea></textarea><span>Сообщение</span>
+                    </label>
                     <div class="condition-wrapper feedback__condition-wrapper">
                       <div class="condition feedback__condition">
                         <label class="condition-label label">
@@ -139,7 +140,6 @@
                           </svg>
                         </div>
                       </button>
-                      <button class="hidden-button feedback__button" type="submit">оформить заявку</button>
                     </div>
                   </form>
                 </div>

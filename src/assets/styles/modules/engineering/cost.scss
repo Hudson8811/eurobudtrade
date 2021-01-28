@@ -125,6 +125,14 @@
         height: 100%;
         box-sizing: border-box;
 
+        span {
+            bottom: 88%;
+
+            @include respond-to('tablet-wide') {
+                bottom: 70%;
+            }
+        }
+
         @include respond-to('tablet-wide') {
             height: 109px;
         }
@@ -152,9 +160,11 @@
     }
 
     &__button {
+        @include respond-to('tablet-middle') {}
 
         @include respond-to('phablet') {
-            display: block;
+            width: 100%;
+            justify-content: center;
         }
     }
 }
