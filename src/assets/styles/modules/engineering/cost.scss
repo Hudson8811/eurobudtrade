@@ -80,6 +80,7 @@
 
     &__input-group {
         margin-bottom: 20px;
+        display: flex;
 
         @include respond-to('phablet') {
             flex-direction: column;
@@ -89,6 +90,8 @@
     &__input-mail {
         border: none;
         margin-right: 25px;
+        width: 100%;
+        margin-bottom: 0;
 
         @include respond-to('phablet') {
             margin-right: 0;
@@ -98,6 +101,12 @@
 
     &__input-tel {
         border: none;
+        width: 100%;
+        margin-bottom: 0;
+
+        @include respond-to('phablet') {
+            margin-bottom: 0px;
+        }
     }
 
     &__form-file-label {
