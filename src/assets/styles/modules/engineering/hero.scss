@@ -2,7 +2,7 @@
     padding-top: 136px;
 
     @include respond-to('phablet') {
-        padding: 90px;
+        padding-top: 90px;
     }
 
     &__container {
