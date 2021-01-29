@@ -149,20 +149,14 @@
     }
 
     &__input-name {
+        width: 100%;
         margin-right: 25px;
     }
 
     &__input-mail {
         font-size: 11px;
 
-        &::placeholder {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 11px;
-            color: #6B7285;
-            text-transform: uppercase;
-
-        }
+        width: 100%;
     }
 
     &__textarea {

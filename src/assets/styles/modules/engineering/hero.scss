@@ -7,8 +7,10 @@
         padding-left: 100px;
         padding-right: 100px;
         padding-bottom: 81px;
-        // padding: 100px;
         box-sizing: border-box;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 
         @include respond-to('tablet-wide') {
             text-align: center;

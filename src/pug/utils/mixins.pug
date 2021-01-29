@@ -121,20 +121,20 @@ mixin services-table-content(...items)
             div= item
 
 mixin input-name(mod)
-    label.application-form-label
+    label.application-form-label(class=`${mod}__input-name`)
         input(type="text")
         span ФИО
 
 mixin input-group(mod)
-    label.application-form-label
+    label.application-form-label(class=`${mod}__input-mail`)
         input(type="email")
         span email адрес
-    label.application-form-label
+    label.application-form-label(class=`${mod}__input-tel`)
         input(type="text")
         span номер телефона
 
 mixin input-mail(mod)
-    label.application-form-label
+    label.application-form-label(class=`${mod}__input-mail`)
         input(type="email")
         span email адрес
 
