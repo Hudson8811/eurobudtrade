@@ -135,7 +135,7 @@
         box-sizing: border-box;
 
         span {
-            bottom: 88%;
+            bottom: 82%;
 
             @include respond-to('tablet-wide') {
                 bottom: 70%;
