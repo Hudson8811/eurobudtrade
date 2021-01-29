@@ -1,6 +1,10 @@
 .hero {
     padding-top: 136px;
 
+    @include respond-to('phablet') {
+        padding: 90px;
+    }
+
     &__container {
         margin-bottom: 24px;
         padding-top: 105px;
