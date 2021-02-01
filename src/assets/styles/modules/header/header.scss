@@ -184,6 +184,14 @@
         text-transform: uppercase;
         font-weight: 500;
       }
+
+      &:hover {
+        color: #688aff;
+      }
+
+      &.is-active {
+        color: #688aff;
+      }
     }
   }
 
@@ -298,6 +306,14 @@
       line-height: 200%;
       color: #fff;
       text-decoration: none;
+
+      &:hover {
+        color: #688aff;
+      }
+
+      &.is-active {
+        color: #688aff;
+      }
     }
 
     &_content {
@@ -321,6 +337,10 @@
         line-height: 200%;
         color: #9da4b5;
         text-decoration: none;
+
+        &:hover {
+          color: #688aff;
+        }
       }
     }
   }
