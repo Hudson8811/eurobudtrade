@@ -102,12 +102,20 @@
     margin-top: 20px;
 
     span {
+      display: block;
       font-weight: normal;
       font-size: 13px;
       line-height: 135%;
       color: #9da4b5;
+      margin-bottom: 5px;
     }
-
+    a {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 135%;
+      text-decoration-line: underline;
+      color: #688aff;
+    }
     img {
       display: block;
       max-width: 104px;

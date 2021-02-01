@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Главная страница</title><!--[if IE]>
+    <title>Проектирование</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content=""><link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
-  <body class="main_page">
+  <body class="engineering_page">
     <script>
       let marketsConfig = {
       	defaults: {
@@ -91,8 +91,8 @@
       <div class="site-content" id="content">
         <div class="content">
           <section class="hero">
-            <div class="container hero__container" style="background-image: url(images/index_banner/index_banner.png);">
-              <h2 class="hero__title">Проектирование <br> Систем вентиляции</h2>
+            <div class="container hero__container" style="background-image: url(images/engineering/hero-bg.jpg);">
+              <h2 class="hero__title">Проектирование cистем вентиляции</h2>
               <div class="button-wrapper"><a class="blue_btn" href="#"><span>заказать проект</span>
                   <svg>
                     <use xlink:href="images/svg/symbol/sprite.svg#calc-arrow"></use>
@@ -101,39 +101,45 @@
             </div>
             <div class="container">
               <ul class="hero__nav"> 
-                <li class="hero__nav-item">Главная </li>
-                <li class="hero__decor">   </li>
-                <li class="hero__nav-item">Типовые проекты</li>
-                <li class="hero__decor">   </li>
-                <li class="hero__nav-item">Магазины и торговые центры</li>
+                <li class="hero__nav-item"> <a class="hero__nav-link" href="">Главная </a></li>
+                <li class="hero__nav-item"> <a class="hero__nav-link" href="">Типовые проекты</a></li>
+                <li class="hero__nav-item"> <a class="hero__nav-link" href="">Магазины и торговые центры</a></li>
               </ul>
             </div>
           </section>
           <section class="engineering">
             <div class="container engineering__container">
-              <h3 class="engineering__title">Проектирование систем вентиляции</h3>
+              <h3 class="engineering__title">Проектирование систем <br> вентиляции</h3>
               <div class="engineering__desc">При строительстве или реконструкции любых видов зданий (коттеджей, квартир, загородных домов, промышленных и административных зданий) важным этапом является проектирование и монтаж систем вентиляции и кондиционирования. Проектирование вентиляции на предварительной стадии строительства позволяет значительно сэкономить средства на закупку и монтаж оборудования для инженерной системы, а также их эксплуатации.</div>
             </div>
           </section>
           <section class="pack">
             <div class="container pack__container"> 
-              <div class="section_title"><span>что выходит в <span>проект</span></span></div>
+              <div class="section_title"><span>что входит в <span>проект</span></span></div>
               <div class="pack__row">
                 <div class="pack__card"><img class="pack__img" src="images/engineering/card-img.png"/>
-                  <div class="pack__title">Пакет чертежей</div>
-                  <div class="pack__desc">Схемы вентиляционной системы;планы;разрезы.</div>
+                  <div class="pack__card-content">
+                    <div class="pack__title">Пакет чертежей</div>
+                    <div class="pack__desc">Схемы вентиляционной системы;планы;разрезы.</div>
+                  </div>
                 </div>
                 <div class="pack__card"><img class="pack__img" src="images/engineering/card-img.png"/>
-                  <div class="pack__title">Спецификация</div>
-                  <div class="pack__desc">Схемы вентиляционной системы;планы;разрезы.</div>
+                  <div class="pack__card-content">
+                    <div class="pack__title">Спецификация</div>
+                    <div class="pack__desc">Схемы вентиляционной системы;планы;разрезы.</div>
+                  </div>
                 </div>
                 <div class="pack__card"><img class="pack__img" src="images/engineering/card-img.png"/>
-                  <div class="pack__title">Задание рабочим</div>
-                  <div class="pack__desc">Электрикам, сантехникам, строителям (при необходимости)</div>
+                  <div class="pack__card-content">
+                    <div class="pack__title">Задание рабочим</div>
+                    <div class="pack__desc">Электрикам, сантехникам, строителям (при необходимости)</div>
+                  </div>
                 </div>
                 <div class="pack__card"><img class="pack__img" src="images/engineering/card-img.png"/>
-                  <div class="pack__title">Обоснование</div>
-                  <div class="pack__desc">Технико-экономическая обоснованность выбора оборудования для вентиляции</div>
+                  <div class="pack__card-content">
+                    <div class="pack__title">Обоснование</div>
+                    <div class="pack__desc">Технико-экономическая обоснованность выбора оборудования для вентиляции</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -274,20 +280,23 @@
           </section>
           <section class="cost">
             <div class="container cost__container">
-              <h3 class="cost__title">Проектирование систем вентиляции</h3>
-              <div class="cost__desc">При строительстве или реконструкции любых видов зданий (коттеджей, квартир, загородных домов, промышленных и административных зданий) важным этапом является проектирование и монтаж систем вентиляции и кондиционирования. Проектирование вентиляции на предварительной стадии строительства позволяет значительно сэкономить средства на закупку и монтаж оборудования для инженерной системы, а также их эксплуатации.</div>
+              <h3 class="cost__title">Стоимость проектирования <br> вентиляции</h3>
+              <div class="cost__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum <br>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</div>
               <div class="cost__form-wrapper">
                 <div class="cost__form-title">Получить коммерческое предложение</div>
                 <form class="cost__form">
                   <div class="cost__form-content">
                     <div class="cost__input-wrapper">
-                      <div class="input-name-wrapper cost__name-wrapper">
-                        <input class="input" placeholder="Анатолий Комаров" type="text"/>
-                        <div class="input-name-decor">ФИО</div>
-                      </div>
-                      <div class="input-group cost__input-group"> 
-                        <input class="input cost__input-mail" placeholder="email адрес" type="mail"/>
-                        <input class="input cost__input-tel" placeholder="номер телефона" type="tel"/>
+                      <label class="application-form-label cost__input-name">
+                        <input type="text"/><span>ФИО</span>
+                      </label>
+                      <div class="cost__input-group">
+                        <label class="application-form-label cost__input-mail">
+                          <input type="email"/><span>email адрес</span>
+                        </label>
+                        <label class="application-form-label cost__input-tel">
+                          <input type="text"/><span>номер телефона</span>
+                        </label>
                       </div>
                       <label class="application-form-label application-form-label-for_file cost__form-file-label">
                         <input type="file"/><span>Добавить файл</span>
@@ -296,7 +305,9 @@
                       </label>
                     </div>
                     <div class="cost__textarea-wrapper">
-                      <textarea class="textarea cost__textarea" placeholder="cообщение"></textarea>
+                      <label class="application-form-label application-form-label-textarea cost__textarea">
+                        <textarea></textarea><span>Сообщение</span>
+                      </label>
                     </div>
                   </div>
                   <div class="condition-wrapper cost__condition-wrapper">
@@ -304,10 +315,14 @@
                       <label class="condition-label label">
                         <input class="condition-checkbox" type="checkbox"/><span class="condition-custom-checkbox"></span>
                       </label><span class="condition-text cost__condition-text">Я принимаю условия <br><a class="condition-link" href="#">пользовательского соглашения</a></span>
-                    </div><a class="blue_btn" href="#"><span>отправить</span>
-                      <svg>
-                        <use xlink:href="images/svg/symbol/sprite.svg#calc-arrow"></use>
-                      </svg></a>
+                    </div>
+                    <button class="button cost__button" type="submit">отправить
+                      <div class="button__icon">
+                        <svg class="button__arrow">
+                          <use xlink:href="images/svg/symbol/sprite.svg#arrow"></use>
+                        </svg>
+                      </div>
+                    </button>
                   </div>
                 </form>
               </div>
@@ -349,7 +364,7 @@
             <li class="footer-row-item"><a class="footer-row-link" href="#">Гарантии</a></li>
             <li class="footer-row-item"><a class="footer-row-link" href="#">Сервис</a></li>
             <li class="footer-row-item">
-              <div class="footer-copyright"><span>Создание сайта:</span><img src="images/footer/copyright.png" alt=""></div>
+              <div class="footer-copyright"><span>Создание сайта:</span><a href="https://mockup.digital/">mockup.digital</a></div>
             </li>
           </ul>
           <ul class="footer-row">

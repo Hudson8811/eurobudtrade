@@ -68,8 +68,8 @@ mixin arrow_btn(title)
         svg
             use(xlink:href='images/svg/symbol/sprite.svg#more_btn')
 
-mixin blue_btn(text) 
-    button.button(type="submit")= text
+mixin form_btn(text, mod) 
+    button.button(type="submit" class=`${mod}__button`)= text
         .button__icon
             svg.button__arrow
                 use(xlink:href='images/svg/symbol/sprite.svg#arrow')
@@ -77,8 +77,9 @@ mixin blue_btn(text)
 mixin pack-card(title,desc)
     .pack__card
         img.pack__img(src="images/engineering/card-img.png")
-        .pack__title= title
-        .pack__desc= desc
+        .pack__card-content
+            .pack__title= title
+            .pack__desc= desc
 
 mixin design-card(number,desc)
     .design__card-wrapper
@@ -120,18 +121,22 @@ mixin services-table-content(...items)
             div= item
 
 mixin input-name(mod)
-    .input-name-wrapper(class=`${mod}__name-wrapper`)
-        input.input(placeholder="Анатолий Комаров" type="text")
-        .input-name-decor ФИО
+    label.application-form-label(class=`${mod}__input-name`)
+        input(type="text")
+        span ФИО
 
 mixin input-group(mod)
-    .input-group(class=`${mod}__input-group`) 
-        input.input(placeholder="email адрес" type="mail" class=`${mod}__input-mail`)
-        input.input(placeholder="номер телефона" type="tel" class=`${mod}__input-tel`)
+    label.application-form-label(class=`${mod}__input-mail`)
+        input(type="email")
+        span email адрес
+    label.application-form-label(class=`${mod}__input-tel`)
+        input(type="text")
+        span номер телефона
 
 mixin input-mail(mod)
-    .input-mail-wrapper(class=`${mod}__mail-wrapper`)
-        input.input(placeholder="ваш email" type="mail")
+    label.application-form-label(class=`${mod}__input-mail`)
+        input(type="email")
+        span email адрес
 
 mixin input-file(mod)
     label.application-form-label.application-form-label-for_file(class=`${mod}__form-file-label`)
@@ -141,7 +146,9 @@ mixin input-file(mod)
         p.application-form-file-btn выбрать
 
 mixin textarea(mod)
-    textarea.textarea(placeholder="cообщение" class=`${mod}__textarea`)
+    label.application-form-label.application-form-label-textarea(class = `${mod}__textarea`)
+        textarea
+        span Сообщение
 
 mixin condition(mod)
     .condition-wrapper(class=`${mod}__condition-wrapper`)
@@ -151,7 +158,6 @@ mixin condition(mod)
                 span.condition-custom-checkbox
             span.condition-text(class=`${mod}__condition-text`) Я принимаю условия <br>
                 a.condition-link(href="#") пользовательского соглашения
-        +blue_btn("отправить")
-            a.more_btn(href="#")
-                span= title
-                +svg("more_btn")
+        +form_btn("отправить",`${mod}`)
+
+

@@ -1,5 +1,5 @@
 .order {
-    padding-top: 120px;
+    padding-top: 54px;
 
     &__container {}
 
@@ -19,6 +19,12 @@
         padding: 15px;
         flex-basis: 50%;
         box-sizing: border-box;
+        margin-bottom: 40px;
+
+        @include respond-to('tablet-wide') {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
     }
 
     &__card {
@@ -29,6 +35,11 @@
         padding-right: 32px;
         max-width: 115px;
         max-height: 83px;
+
+        @include respond-to('phablet') {
+            max-width: 85px;
+            max-height: 48px;
+        }
     }
 
     &__card-title {
@@ -37,11 +48,21 @@
         line-height: 135%;
         color: #262C36;
         margin-bottom: 24px;
+
+        @include respond-to('phablet') {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
     }
 
     &__card-desc {
         font-size: 15px;
         line-height: 150%;
         color: #6B7285;
+        width: 85%;
+
+        @include respond-to('phablet') {
+            width: 100%;
+        }
     }
 }

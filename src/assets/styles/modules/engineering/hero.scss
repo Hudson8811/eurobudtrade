@@ -1,10 +1,29 @@
 .hero {
     padding-top: 136px;
 
+    @include respond-to('phablet') {
+        padding-top: 90px;
+    }
+
     &__container {
         margin-bottom: 24px;
-        padding: 100px;
+        padding-top: 105px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 81px;
         box-sizing: border-box;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include respond-to('tablet-wide') {
+            text-align: center;
+            padding: 80px;
+        }
+
+        @include respond-to('phablet') {
+            padding: 40px;
+        }
     }
 
     &__title {
@@ -14,21 +33,57 @@
         font-size: 40px;
         line-height: 135%;
         color: #FFFFFF;
-        margin-bottom: 102px;
+        margin-bottom: 89px;
+        width: 56%;
+
+        @include respond-to('tablet-wide') {
+            width: 100%;
+            text-align: center;
+        }
+
+        @include respond-to('phablet') {
+            font-size: 24px;
+            margin-bottom: 70px;
+        }
     }
 
     &__nav {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__nav-item {
-        padding: 0 10px;
+        position: relative;
+        margin-right: 20px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:not(:last-child) {
+            &::before {
+                content: "/";
+                position: absolute;
+                right: -15px;
+            }
+        }
+
     }
 
-    &__decor {
-        &::before {
-            content: "/";
+    &__nav-link {
+        transition: opacity 0.4s ease;
+
+        &:hover {
+            opacity: 0.6;
         }
     }
+
+    // &__decor {
+    //     &::before {
+    //         content: "/";
+    //         position: absolute;
+    //         right: 10px;
+    //     }
+    // }
 }

@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Главная страница</title><!--[if IE]>
+    <title>Контакты</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content=""><link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
-  <body class="main_page">
+  <body class="contacts_page">
     <script>
       let marketsConfig = {
       	defaults: {
@@ -93,13 +93,14 @@
           <div class="map" style="background-image: url(images/index_banner/index_banner.png);">
             <div class="container navigation__container">
               <div class="navigation__img-wrapper">
-                <div class="map" id="map" style="width:1240px;height:639px;"></div>
+                <div class="navigation__map">
+                  <div class="navigation__map-inner"> 
+                    <div class="navigation__map-frame" id="map"></div>
+                  </div>
+                </div>
                 <div class="navigation__content">
-                  <div class="navigation__subtitle">Контакты</div>
-                  <div class="navigation__tel">+38 (044) 3642970</div>
-                  <div class="navigation__tel">+38 (044) 3642971</div>
-                  <div class="navigation__tel">+38 (044) 3642972</div>
-                  <div class="navigation__adress">Украина, г. Киев, <br> Киево-Святошинский р-н, <br>с. Чайки, ул. Антонова, 8 А</div><a class="navigation__mail" href="#">info@sensei.ua</a>
+                  <div class="navigation__subtitle">Контакты</div><a class="navigation__tel" href="telto:38 (044) 3642970">+38 (044) 3642970</a><a class="navigation__tel" href="telto:+38 (044) 3642971">+38 (044) 3642971</a><a class="navigation__tel" href="telto:+38 (044) 3642972">+38 (044) 3642972</a>
+                  <div class="navigation__adress">Украина, г. Киев, <br> Киево-Святошинский р-н, <br>с. Чайки, ул. Антонова, 8 А</div><a class="navigation__mail" href="mailto:info@sensei.ua">info@sensei.ua</a>
                 </div>
               </div>
             </div>
@@ -112,28 +113,33 @@
                   <div class="section_title"><span>обратная <span>связь</span></span></div>
                 </div>
               </div>
-              <div class="feedback__row">
+              <div class="feedback__row-feedback">
                 <div class="feedback__form-wrapper"> 
                   <form class="feedback__form">
                     <div class="feedback__input-wrapper">
-                      <div class="input-name-wrapper feedback__name-wrapper">
-                        <input class="input" placeholder="Анатолий Комаров" type="text"/>
-                        <div class="input-name-decor">ФИО</div>
-                      </div>
-                      <div class="input-mail-wrapper feedback__mail-wrapper">
-                        <input class="input" placeholder="ваш email" type="mail"/>
-                      </div>
+                      <label class="application-form-label feedback__input-name">
+                        <input type="text"/><span>ФИО</span>
+                      </label>
+                      <label class="application-form-label feedback__input-mail">
+                        <input type="email"/><span>email адрес</span>
+                      </label>
                     </div>
-                    <textarea class="textarea feedback__textarea" placeholder="cообщение"></textarea>
+                    <label class="application-form-label application-form-label-textarea feedback__textarea">
+                      <textarea></textarea><span>Сообщение</span>
+                    </label>
                     <div class="condition-wrapper feedback__condition-wrapper">
                       <div class="condition feedback__condition">
                         <label class="condition-label label">
                           <input class="condition-checkbox" type="checkbox"/><span class="condition-custom-checkbox"></span>
                         </label><span class="condition-text feedback__condition-text">Я принимаю условия <br><a class="condition-link" href="#">пользовательского соглашения</a></span>
-                      </div><a class="blue_btn" href="#"><span>отправить</span>
-                        <svg>
-                          <use xlink:href="images/svg/symbol/sprite.svg#calc-arrow"></use>
-                        </svg></a>
+                      </div>
+                      <button class="button feedback__button" type="submit">отправить
+                        <div class="button__icon">
+                          <svg class="button__arrow">
+                            <use xlink:href="images/svg/symbol/sprite.svg#arrow"></use>
+                          </svg>
+                        </div>
+                      </button>
                     </div>
                   </form>
                 </div>
@@ -174,7 +180,7 @@
             <li class="footer-row-item"><a class="footer-row-link" href="#">Гарантии</a></li>
             <li class="footer-row-item"><a class="footer-row-link" href="#">Сервис</a></li>
             <li class="footer-row-item">
-              <div class="footer-copyright"><span>Создание сайта:</span><img src="images/footer/copyright.png" alt=""></div>
+              <div class="footer-copyright"><span>Создание сайта:</span><a href="https://mockup.digital/">mockup.digital</a></div>
             </li>
           </ul>
           <ul class="footer-row">
