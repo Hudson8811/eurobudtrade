@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  $('[data-fancybox="gallery"]').fancybox();
+  
     $('.index_banner-slider').slick({
         dots: false,
         arrows: false,
