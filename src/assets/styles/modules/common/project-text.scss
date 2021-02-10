@@ -30,11 +30,10 @@
 
   p {
     display: block;
-    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 135%;
-    color: #262c36;
+    font-size: 15px;
+    line-height: 180%;
+    color: #6b7285;
     margin-bottom: 20px;
     text-align: justify;
   }
@@ -49,9 +48,9 @@
       display: block;
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 135%;
-      color: #262c36;
+      color: #6b7285;
 
       & + li {
         margin-top: 5px;

@@ -57,9 +57,9 @@
   &-desc {
     display: block;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 135%;
-    color: #000;
+    color: #6b7285;
 
     @include respond-to('tablet-wide') {
       padding-bottom: 24px;
